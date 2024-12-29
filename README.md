@@ -36,7 +36,7 @@ Step 4: Push the Changes to GitHub
 Once you've committed your changes, you need to push them to the remote GitHub repository to reflect the changes online.
 
 To push the changes to the remote repository, run:
-git push origin main
+git push origin master
 (If you are using the master branch, use master instead of main.)
 Step 5: Verify the Changes
 Go to your GitHub repository in the browser.
@@ -47,5 +47,5 @@ git add .
 Commit changes:
 git commit -m "Your message"
 Push to GitHub:
-git push origin main
+git push origin master
 That's it! Let me know if you need more clarification!
