@@ -8,47 +8,49 @@ const About = () => {
           <h1 className="text-4xl text-start font-bold text-teal-800 mb-6">
             Our Journey
           </h1>
-          <p className="text-lg text-start text-gray-700 leading-relaxed">
+          <p className=" text-start text-gray-700 leading-relaxed">
             From humble beginnings to industry leadership, Himalaya Plast has
             continually evolved to meet the needs of modern industries:
           </p>
         </div>
         <div className="max-w-6xl mx-auto mt-10 space-y-8">
           <div className="flex items-start space-x-4">
-            <div className="h-10 w-10 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold text-teal-800">1</span>
+            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
+              <span className="font-bold text-teal-800">1</span>
             </div>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700">
               <strong>Innovation at the Core:</strong> Early adoption of
               recyclable thermoplastic elastomers (TPE) revolutionized our
               manufacturing processes.
             </p>
           </div>
           <div className="flex items-start space-x-4">
-            <div className="h-10 w-10 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold text-teal-800">2</span>
+            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
+            <span className="font-bold text-teal-800">2</span>
             </div>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700">
               <strong>Certifications that Inspire Confidence:</strong> Achieved
               ISO 14001 (Environmental Management) and ISO 45001 (Workplace
               Safety) certifications.
             </p>
           </div>
           <div className="flex items-start space-x-4">
-            <div className="h-10 w-10 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold text-teal-800">3</span>
+            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
+              {" "}
+              <span className="font-bold text-teal-800">3</span>
             </div>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700">
               <strong>Technological Excellence:</strong> Integrated advanced
               co-extrusion technologies to deliver custom solutions tailored to
               diverse applications.
             </p>
           </div>
           <div className="flex items-start space-x-4">
-            <div className="h-10 w-10 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold text-teal-800">4</span>
+            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
+              {" "}
+              <span className="font-bold text-teal-800">4</span>
             </div>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700">
               <strong>A Testament to Growth:</strong> Today, Himalaya Plast
               stands as a beacon of continuous improvement and sustainable
               growth.
@@ -59,8 +61,16 @@ const About = () => {
 
       <Mission />
 
-      <section className="h-[40rem] bg-teal-100">
-        Global Reach & Partnerships
+      <section className="h-[40rem] bg-teal-100 flex flex-col justify-center items-center text-center p-8">
+        <h2 className="text-4xl font-semibold text-teal-900 mb-4">
+          Global Reach & Partnerships
+        </h2>
+        <p className="text-lg mx-auto max-w-4xl text-teal-700 mb-6">
+          We are proud to have established strong partnerships around the world,
+          extending our influence and impact in diverse markets. Our global
+          network allows us to serve our clients with unmatched expertise and
+          support.
+        </p>
       </section>
 
       <section className="h-[50rem] bg-gradient-to-r from-teal-400 to-teal-600 text-white py-16">

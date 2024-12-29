@@ -6,10 +6,12 @@ import Products from "./pages/Products";
 import CaseStudies from "./pages/CaseStudies";
 import Footer from "./components/Footer"
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
     return (
         <Router>
+        <ScrollToTop />
           <Navbar/>
             <Routes>
                 <Route path="/" element={<Home />} />

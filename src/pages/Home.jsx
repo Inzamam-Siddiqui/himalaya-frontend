@@ -86,10 +86,10 @@ const Home = () => {
       </section>
 
       <section className="h-[40rem] bg-gray-100 py-20">
-        <h1 className="text-2xl font-bold text-center text-teal-800 mb-2">
+        <h1 className="text-3xl font-bold text-center text-teal-800 mb-2">
           Industries We Serve
         </h1>
-        <h2 className="text-xl max-w-3xl mx-auto font-semibold text-center text-teal-500 mb-6">
+        <h2 className="text-lg max-w-3xl mx-auto font-semibold text-center text-teal-500 mb-6">
           Himalaya Plast’s versatile gaskets are designed for various
           industries, offering high-performance sealing solutions
         </h2>
