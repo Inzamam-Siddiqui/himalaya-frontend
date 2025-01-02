@@ -1,5 +1,5 @@
 import { NavLink, useNavigate, Link } from "react-router-dom";
-import logo from "../assets/logos/logo.png";
+import hplogo from "../assets/logos/hplogo.png";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -7,11 +7,11 @@ const Navbar = () => {
   const [showProducts, setShowProducts] = useState(false);
 
   return (
-    <div className="h-20 bg-transparent fixed px-6 py-4 flex justify-evenly items-center w-full z-10">
+    <div className="h-20 bg-transparent backdrop-blur-sm fixed px-6 py-4 flex justify-evenly items-center w-full z-10">
       <div>
         <img
           onClick={() => navigate("/")}
-          src={logo}
+          src={hplogo}
           alt="Logo"
           className="h-20 rounded-2xl cursor-pointer"
         />
@@ -47,13 +47,20 @@ const Navbar = () => {
             Products
           </NavLink>
           {showProducts && (
-            <div className="absolute w-72 left-0 bg-white border border-gray-300 shadow-xl rounded-2xl py-2 z-10">
+            <div className="absolute w-[22rem] left-0 bg-white border border-gray-300 shadow-xl rounded-2xl py-2 z-10">
               {[
-                { label: "UPVC Door and Window Gaskets" },
-                { label: "Aluminium Door, Window and Facade Gasket & Seals" },
-                { label: "Wooden Door and Window System Gaskets" },
-                { label: "Roof Window Gaskets and Seals" },
+                { label: "uPVC Door and Window Gaskets" },
+                { label: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals" },
+                { label: "Cover Gaskets & Seals" },
+                { label: "Customizable Gaskets & Seals" },
+                { label: "Electric Panel Gaskets" },
                 { label: "Luggage Seals and Gaskets" },
+                { label: "Partition Profiles and Gaskets" },
+                { label: "Pipe Seals & Gaskets" },
+              
+                { label: "Slim Partition Profiles and Gaskets" },
+                { label: "System Window Gaskets" },
+                
               ].map((item, index) => (
                 <button
                   key={index}

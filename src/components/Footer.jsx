@@ -1,4 +1,4 @@
-import footerLogo from "/src/assets/logos/logo.png"; // Adjusted path for Vite compatibility
+import hplogo from "../assets/logos/hplogo.png";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-sm">
           {/* Logo and Description */}
           <div className="flex flex-col items-start">
-            <img className="mb-5 w-40" src={footerLogo} alt="Cygnus Logo" />
+            <img className="mb-5 w-40" src={hplogo} alt="Cygnus Logo" />
             <p className="leading-6">
               Himalaya Plast is Manufacturer of architectural window gasket
               since 1998.

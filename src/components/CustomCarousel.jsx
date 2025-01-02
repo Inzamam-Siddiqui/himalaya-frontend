@@ -1,5 +1,5 @@
 import { useState } from "react";
-import image1 from "../assets/logos/logo.png";
+import image1 from "../assets/logos/hplogo.png";
 
 const CustomCarousel = () => {
   const images = [

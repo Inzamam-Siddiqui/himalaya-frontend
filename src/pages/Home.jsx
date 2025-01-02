@@ -15,7 +15,7 @@ const Home = () => {
       <KeyProducts />
 
       <section className="bg-teal-100 py-20">
-        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-red-200 grid-flow-col h-[20rem] p-4 gap-4">
+        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-gray-200 grid-flow-col h-[20rem] p-4 gap-4">
           <div className="row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
               src="https://via.placeholder.com/200"
@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-red-200 grid-flow-col h-[20rem] p-4 gap-4">
+        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-gray-200 grid-flow-col h-[20rem] p-4 gap-4">
           <div className="row-span-3 col-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
               src="https://via.placeholder.com/200"
