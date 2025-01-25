@@ -48,29 +48,27 @@ const Navbar = () => {
           </NavLink>
           {showProducts && (
             <div className="absolute w-[22rem] left-0 bg-white border border-gray-300 shadow-xl rounded-2xl py-2 z-10">
-              {[
-                { label: "uPVC Door and Window Gaskets" },
-                { label: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals" },
-                { label: "Cover Gaskets & Seals" },
-                { label: "Customizable Gaskets & Seals" },
-                { label: "Electric Panel Gaskets" },
-                { label: "Luggage Seals and Gaskets" },
-                { label: "Partition Profiles and Gaskets" },
-                { label: "Pipe Seals & Gaskets" },
-              
-                { label: "Slim Partition Profiles and Gaskets" },
-                { label: "System Window Gaskets" },
-                
-              ].map((item, index) => (
-                <button
-                  key={index}
-                  onClick={() => navigate(item.path)}
-                  className="flex items-center w-full mb-2 px-4 py-2 text-left hover:bg-teal-500 hover:text-white text-gray-800"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
+            {[
+              { label: "uPVC Door and Window Gaskets", path: "/products/1" },
+              { label: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals", path: "/products/2" },
+              { label: "Cover Gaskets & Seals", path: "/products/4" },
+              { label: "Customizable Gaskets & Seals", path: "/products/10" },
+              { label: "Electric Panel Gaskets", path: "/products/9" },
+              { label: "Luggage Seals and Gaskets", path: "/products/5" },
+              { label: "Partition Profiles and Gaskets", path: "/products/7" },
+              { label: "Pipe Seals & Gaskets", path: "/products/3" },
+              { label: "Slim Partition Profiles and Gaskets", path: "/products/6" },
+              { label: "System Window Gaskets", path: "/products/8" },
+            ].map((item, index) => (
+              <button
+                key={index}
+                onClick={() => navigate(item.path)} // Navigate to the specified path
+                className="flex items-center w-full mb-2 px-4 py-2 text-left hover:bg-teal-500 hover:text-white text-gray-800"
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
           )}
         </div>
         <div className="relative">

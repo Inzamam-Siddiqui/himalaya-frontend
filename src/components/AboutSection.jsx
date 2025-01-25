@@ -1,4 +1,9 @@
 const AboutSection = () => {
+
+  const shopOpenedYear = 2000; // Replace with the year your shop opened
+  const currentYear = new Date().getFullYear();
+  const shopAge = currentYear - shopOpenedYear;
+
   return (
     <section className="p-6 bg-teal-100">
       <div className="my-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 rounded-xl">
@@ -43,7 +48,7 @@ const AboutSection = () => {
 
         {/* Card 3 */}
         <div className=" pt-20 p-3">
-          <h1 className="text-9xl font-semibold text-gray-800">25</h1>
+          <h1 className="text-9xl font-semibold text-gray-800">{shopAge}</h1>
           <h3 className="text-xl font-bold mb-10">
             Years of experience resulting from continuous useful work.
           </h3>

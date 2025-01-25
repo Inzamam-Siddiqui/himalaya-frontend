@@ -7,7 +7,7 @@ import CaseStudies from "./pages/CaseStudies";
 import Footer from "./components/Footer"
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
-import ProductCard from './pages/Products';
+import ProductCard from './components/ProductCard';
 
 const App = () => {
     return (
