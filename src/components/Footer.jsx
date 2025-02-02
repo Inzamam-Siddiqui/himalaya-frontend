@@ -26,6 +26,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/about" className="hover:text-teal-300 transition">
+                  About Us
+                </a>
+              </li>
+              <li>
                 <a
                   href="/products"
                   className="hover:text-teal-300 transition"
@@ -41,19 +46,8 @@ const Footer = () => {
                   Sustainability
                 </a>
               </li>
-              <li>
-                <a
-                  href="/casestudies"
-                  className="hover:text-teal-300 transition"
-                >
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="hover:text-teal-300 transition">
-                  About Us
-                </a>
-              </li>
+              
+             
             </ul>
           </div>
 

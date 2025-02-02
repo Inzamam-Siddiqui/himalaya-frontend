@@ -1,5 +1,7 @@
 import { useState } from "react";
 import image1 from "../assets/logos/hplogo.png";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 const CustomCarousel = () => {
   const images = [
@@ -40,15 +42,15 @@ const CustomCarousel = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
+        className="absolute text-white top-1/2 left-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
       >
-        Prev
+        <FaArrowLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
+        className="absolute text-white top-1/2 right-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
       >
-        Next
+        <FaArrowRight />
       </button>
     </div>
   );

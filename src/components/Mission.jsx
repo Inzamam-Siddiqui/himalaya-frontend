@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { GoGoal } from "react-icons/go";
+
 
 const Mission = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -8,6 +10,7 @@ const Mission = () => {
       title: "Mission",
       content:
         "To create innovative, sustainable gasket solutions that empower our clients to succeed while preserving the planet for future generations.",
+      image: <GoGoal/>
     },
     {
       title: "Vision",
@@ -54,7 +57,7 @@ const Mission = () => {
         </div>
         {selectedCard !== null && (
           <div
-            className="mt-8 mx-auto max-w-4xl bg-teal-700 text-white p-6 rounded-lg shadow-lg 
+            className="mt-8 mx-auto max-w-4xl bg-gray-600 text-white p-6 rounded-lg shadow-lg 
     transition-all duration-300 ease-in-out transform scale-105 opacity-100 h-auto"
           >
             <p className="text-lg font-medium leading-relaxed whitespace-pre-line text-center">

@@ -125,7 +125,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="p-20 bg-teal-100">
+      <section className="p-16 bg-teal-100">
         <div className="p-5 mx-auto max-w-7xl">
           <h1 className="text-4xl text-teal-800 mb-2 font-bold">
             Why Choose Us ?
@@ -170,7 +170,7 @@ const Home = () => {
       </section>
 
       <div className="flex justify-center pb-5 bg-teal-100">
-        <button className="text-white bg-gradient-to-r from-teal-500 via-teal-700 to-teal-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-sm px-5 py-2.5 text-center">
+        <button className="text-white bg-gradient-to-r from-teal-500 via-teal-700 to-teal-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-md px-5 py-2.5 text-center">
           <Link to="/contact">Contact Us {"->"}</Link>
         </button>
       </div>

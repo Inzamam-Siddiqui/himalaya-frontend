@@ -1,11 +1,12 @@
 import Mission from "../components/Mission";
+import tiger from "../assets/logos/India.png";
 
 const About = () => {
   return (
     <div className="">
       <section className="h-auto pt-40 pb-10 bg-teal-100">
         <div className="max-w-6xl mx-auto  text-center">
-          <h1 className="text-4xl text-start font-bold text-teal-800 mb-6">
+          <h1 className="text-5xl text-center font-bold text-teal-800 mb-6">
             Our Journey
           </h1>
           <p className=" text-start text-gray-700 leading-relaxed">
@@ -136,9 +137,9 @@ const About = () => {
         </div>
         <div className="mt-10 flex justify-center">
           <img
-            src="/path-to-your-indian-flag-or-related-image.jpg"
-            alt="Made in India"
-            className="w-60 h-auto rounded-lg shadow-lg"
+            src={tiger}
+            alt="Make in India"
+            className="w-80 h-auto rounded-lg"
           />
         </div>
       </section>
