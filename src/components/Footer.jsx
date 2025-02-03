@@ -1,5 +1,5 @@
 import hplogo from "../assets/logos/hplogo.png";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -57,20 +57,19 @@ const Footer = () => {
             <ul className="flex flex-col gap-2">
               <li>
                 <a
-                  href="/careers"
+                  
                   className="hover:text-teal-300 transition"
                 >
                   Careers
                 </a>
               </li>
               <li>
-                <a href="/terms" className="hover:text-teal-300 transition">
+                <a  className="hover:text-teal-300 transition">
                   Terms
                 </a>
               </li>
               <li>
                 <a
-                  href="/privacy"
                   className="hover:text-teal-300 transition"
                 >
                   Privacy
@@ -78,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/cookies"
+                  
                   className="hover:text-teal-300 transition"
                 >
                   Cookies
@@ -124,6 +123,14 @@ const Footer = () => {
                   className="hover:text-pink-500 transition"
                 >
                   <FaInstagram />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-800 transition"
+                >
+                  <FaLinkedin />
                 </a>
               </li>
             </ul>

@@ -16,7 +16,7 @@ const KeyProducts = () => {
         {products.slice(0,4).map((product, index) => (
           <div
             key={index}
-            className={` p-6 rounded-lg shadow-lg ${product.id % 2 === 1 ? "bg-teal-100" : "bg-teal-300"}`}
+            className={` p-6 rounded-lg shadow-lg ${product.id % 2 === 1 ? "bg-teal-100" : "bg-teal-400"}`}
           >
             <div className="flex justify-center mb-4">
               <img

@@ -1,3 +1,8 @@
+import image7 from "../assets/bgimages/image7.jpg";
+import { FaHandshake } from "react-icons/fa";
+
+
+
 const AboutSection = () => {
 
   const shopOpenedYear = 2000; // Replace with the year your shop opened
@@ -11,7 +16,7 @@ const AboutSection = () => {
         <div className="bg-teal-100 p-3 rounded-lg">
           <div className="flex justify-center mb-4">
             <img
-              src="https://via.placeholder.com/100"
+              src={image7}
               alt="Data Protection"
               className="h-[30rem] object-cover rounded-lg"
             />
@@ -52,12 +57,10 @@ const AboutSection = () => {
           <h3 className="text-xl font-bold mb-10">
             Years of experience resulting from continuous useful work.
           </h3>
-          <div className="rounded-lg bg-teal-400 p-2 shadow-xl h-[24rem]">
-          <img
-              src="https://via.placeholder.com/100"
-              alt="Signature"
-              className="object-cover mb-4"
-            />
+          <div className="rounded-lg bg-teal-400 p-4 shadow-xl h-[24rem]">
+          <div>
+            <FaHandshake className="w-24 h-24 text-teal-200"/>
+          </div>
             <h2 className="text-xl font-bold mb-2">Fair Prices</h2>
             <p className="">The prices offered by us are not fixed and vary based on your needs
             and the services provided, so that we can meet the needs of many

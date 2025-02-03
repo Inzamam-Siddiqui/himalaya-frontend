@@ -96,7 +96,6 @@ const ContactForm = () => {
             rows="5"
             placeholder="Enter your message"
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-gray-100 text-gray-700"
-            required
           ></textarea>
         </div>
       </div>

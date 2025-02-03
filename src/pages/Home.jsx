@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import KeyProducts from "../components/KeyProducts";
 import { FaRecycle, FaHandshake, FaLeaf } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import image8 from "../assets/bgimages/image6.jpg"
 
 const Home = () => {
   return (
@@ -96,7 +97,7 @@ const Home = () => {
 
         <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
           <div className="border-teal-800 border-4 h-[22rem] p-3">
-            <img src="" alt=""></img>
+            <img src={image8} alt="" className="h-80 w-72"></img>
             <h1 className="text-2xl font-semibold"></h1>
             <h4 className=""></h4>
           </div>

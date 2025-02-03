@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { GoGoal } from "react-icons/go";
+import { FaRegLightbulb } from "react-icons/fa";
+import { FaHandHoldingHeart } from "react-icons/fa6";
+import { MdRocketLaunch } from "react-icons/md";
 
 
 const Mission = () => {
@@ -10,12 +12,13 @@ const Mission = () => {
       title: "Mission",
       content:
         "To create innovative, sustainable gasket solutions that empower our clients to succeed while preserving the planet for future generations.",
-      image: <GoGoal/>
+      image: <MdRocketLaunch />,
     },
     {
       title: "Vision",
       content:
         "To lead the global gasket industry by setting new standards in sustainability, innovation, and customer satisfaction.",
+      image: <FaRegLightbulb />,
     },
     {
       title: "Values",
@@ -25,6 +28,7 @@ const Mission = () => {
         Innovation: Leveraging advanced technology for smarter, more efficient solutions. 
         Integrity: Building trust through transparency and ethical practices.
       `,
+      image: <FaHandHoldingHeart />,
     },
   ];
 
@@ -42,13 +46,10 @@ const Mission = () => {
               onMouseEnter={() => setSelectedCard(index)}
               onMouseLeave={() => setSelectedCard(null)}
             >
-              <div className="flex justify-center mb-4">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="h-16 w-16 object-contain bg-gray-100 p-2 rounded-full"
-                />
+              <div className="flex justify-center mb-4 text-4xl text-gray-700">
+                {card.image}
               </div>
+
               <h2 className="text-xl font-semibold text-gray-800 text-center">
                 {card.title}
               </h2>

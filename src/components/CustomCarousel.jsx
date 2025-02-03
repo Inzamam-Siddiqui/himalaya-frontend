@@ -1,26 +1,28 @@
 import { useState } from "react";
-import image1 from "../assets/logos/hplogo.png";
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import image1 from "../assets/bgimages/image3.jpg";
+import image2 from "../assets/bgimages/image1.jpg";
+import image3 from "../assets/bgimages/image5.jpg";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const CustomCarousel = () => {
-  const images = [
-    image1,
-    "https://via.placeholder.com/00x200?text=2",
-    "https://via.placeholder.com/300x200?text=3",
+  const slides = [
+    { image: image1, text: "Welcome to Our Website",description:"We are dedicated to providing you with the best possible experience." },
+    { image: image2, text: "Explore Our Features" ,description:"Discover our range of products and services that cater to your needs."},
+    { image: image3, text: "Get in Touch with Us",description:"Feel free to reach out to us for any inquiries or assistance." },
   ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   return (
-    <div className="relative w-full h-[60rem] m-auto overflow-hidden">
+    <div className="relative w-full h-screen m-auto overflow-hidden">
       {/* Carousel Container */}
       <div
         className="flex h-full transition-transform duration-500"
@@ -28,13 +30,18 @@ const CustomCarousel = () => {
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
       >
-        {images.map((src, index) => (
-          <div key={index} className="min-w-full h-[1000px]">
+        {slides.map((slide, index) => (
+          <div key={index} className="relative min-w-full h-screen">
             <img
-              src={src}
+              src={slide.image}
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-cover"
             />
+            {/* Text Overlay */}
+            <div className="absolute inset-0 pt-[47vh] pl-[20vh] items-center justify-center bg-black bg-opacity-40">
+              <h2 className="text-white p-2 rounded-md  text-4xl font-bold">{slide.text}</h2>
+              <p className="text-white p-2 rounded-md  text-xl font-medium">{slide.description}</p>
+            </div>
           </div>
         ))}
       </div>
