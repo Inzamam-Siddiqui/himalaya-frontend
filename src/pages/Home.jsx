@@ -82,7 +82,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-auto bg-gray-100 py-20">
+      <section className="h-auto bg-gray-100 py-16 px-4">
         <h1 className="text-4xl font-bold text-center text-teal-800 mb-2">
           Industries We Serve
         </h1>
@@ -133,7 +133,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="p-16 bg-teal-100">
+      <section className="py-16 px-4 bg-teal-100">
         <div className="p-5 mx-auto max-w-7xl">
           <h1 className="text-4xl text-teal-800 mb-2 font-bold">
             Why Choose Us ?
@@ -177,8 +177,8 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="flex justify-center pb-5 bg-teal-100">
-        <button className="text-white bg-gradient-to-r from-teal-500 via-teal-700 to-teal-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-md px-5 py-2.5 text-center">
+      <div className="flex justify-center pb-10 bg-teal-100">
+        <button className="text-white bg-gradient-to-r from-teal-500 via-teal-700 to-teal-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-lg px-5 py-2.5 text-center">
           <Link to="/contact">Contact Us {"->"}</Link>
         </button>
       </div>

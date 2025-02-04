@@ -122,7 +122,6 @@ const Sustainability = () => {
         </div>
       </div>
     </section>
-    (
     <section className="bg-teal-100 py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Our Approach to Sustainability */}

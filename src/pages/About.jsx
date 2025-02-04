@@ -4,7 +4,7 @@ import tiger from "../assets/logos/India.png";
 const About = () => {
   return (
     <div className="">
-      <section className="h-auto pt-40 pb-10 bg-teal-100">
+      <section className="h-auto pt-40 pb-10 px-4 bg-teal-100">
         <div className="max-w-6xl mx-auto  text-center">
           <h1 className="text-5xl text-center font-bold text-teal-800 mb-6">
             Our Journey
@@ -74,7 +74,7 @@ const About = () => {
         </p>
       </section>
 
-      <section className="h-[40rem] bg-gradient-to-r from-teal-400 to-teal-600 text-white py-16">
+      <section className="h-auto bg-gradient-to-r from-teal-400 to-teal-600 text-white px-4 py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Certifications and Achievements
@@ -122,7 +122,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="h-auto py-20 bg-teal-100">
+      <section className="h-auto py-20 bg-teal-100 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-teal-800 mb-6">
             Proudly Made in India 🇮🇳

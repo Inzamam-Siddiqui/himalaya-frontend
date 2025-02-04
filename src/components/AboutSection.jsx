@@ -44,7 +44,7 @@ const AboutSection = () => {
               alt="Signature"
               className="object-cover"
             />
-            <h1 className="pt-10">Gulam Kibria Siddiqui <br/>- CEO & Founder</h1>
+            <h1 className="pt-10">Gulam Kibria Siddiqui <br/>- Founder & CEO</h1>
             
           </div>
         </div>
