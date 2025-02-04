@@ -1,3 +1,5 @@
+import { FaLeaf, FaRecycle, FaCloudSun, FaHandshake, FaUsers } from "react-icons/fa"
+
 const Sustainability = () => {
   return (
     <div className="">
@@ -120,6 +122,7 @@ const Sustainability = () => {
         </div>
       </div>
     </section>
+    (
     <section className="bg-teal-100 py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Our Approach to Sustainability */}
@@ -144,11 +147,8 @@ const Sustainability = () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex items-start space-x-4">
-              <div className="bg-teal-100 p-4 rounded-full">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Energy Conservation Icon"
-                />
+              <div className="bg-teal-200 p-4 rounded-full">
+                <FaLeaf className="text-teal-800 text-3xl" />
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-teal-800">
@@ -163,11 +163,8 @@ const Sustainability = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-teal-100 p-4 rounded-full">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Recycling Icon"
-                />
+              <div className="bg-teal-200 p-4 rounded-full">
+                <FaRecycle className="text-teal-800 text-3xl" />
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-teal-800">
@@ -182,11 +179,8 @@ const Sustainability = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-teal-100 p-4 rounded-full">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Carbon Footprint Icon"
-                />
+              <div className="bg-teal-200 p-4 rounded-full">
+                <FaCloudSun className="text-teal-800 text-3xl" />
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-teal-800">
@@ -201,11 +195,8 @@ const Sustainability = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-teal-100 p-4 rounded-full">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Supplier Engagement Icon"
-                />
+              <div className="bg-teal-200 p-4 rounded-full">
+                <FaHandshake className="text-teal-800 text-3xl" />
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-teal-800">
@@ -220,11 +211,8 @@ const Sustainability = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-teal-100 p-4 rounded-full">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Staff Engagement Icon"
-                />
+              <div className="bg-teal-200 p-4 rounded-full">
+                <FaUsers className="text-teal-800 text-3xl" />
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-teal-800">

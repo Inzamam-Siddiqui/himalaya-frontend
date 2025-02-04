@@ -1,24 +1,38 @@
+import { useState } from "react";
+
 const ContactForm = () => {
+  const [statusMessage, setStatusMessage] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "fd76397b-5a95-4f73-b421-b13e6abdb121");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
 
-    if (res.success) {
-      console.log("Success", res);
+      const res = await response.json();
+
+      if (res.success) {
+        setStatusMessage("Form submitted successfully!");
+        event.target.reset(); // Reset form after successful submission
+      } else {
+        setStatusMessage("Failed to submit form. Please try again.");
+      }
+    } catch (error) {
+      setStatusMessage("An error occurred. Please try again later.");
+      console.error("Error:", error);
     }
   };
 
@@ -106,6 +120,12 @@ const ContactForm = () => {
       >
         Submit
       </button>
+
+      {statusMessage && (
+        <p className="mt-4 text-center text-sm font-semibold text-gray-700">
+          {statusMessage}
+        </p>
+      )}
     </form>
   );
 };

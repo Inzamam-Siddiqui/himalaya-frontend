@@ -1,5 +1,7 @@
 import hplogo from "../assets/logos/hplogo.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -112,9 +114,9 @@ const Footer = () => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-400 transition"
+                  className="hover:text-black transition"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
                 <a
                   href="https://instagram.com"

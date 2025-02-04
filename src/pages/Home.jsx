@@ -4,7 +4,12 @@ import AboutSection from "../components/AboutSection";
 import KeyProducts from "../components/KeyProducts";
 import { FaRecycle, FaHandshake, FaLeaf } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import image8 from "../assets/bgimages/image6.jpg"
+import image1 from "../assets/bgimages/image1.jpg";
+import image2 from "../assets/bgimages/image2.jpg";
+import image3 from "../assets/bgimages/image3.jpg";
+import image4 from "../assets/bgimages/image4.jpg";
+import image5 from "../assets/bgimages/image8.jpg";
+import image6 from "../assets/bgimages/image7.jpg";
 
 const Home = () => {
   return (
@@ -16,88 +21,79 @@ const Home = () => {
       <KeyProducts />
 
       <section className="bg-teal-100 py-20">
-        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-gray-200 grid-flow-col h-[20rem] p-4 gap-4">
-          <div className="row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+        {/* First Grid Layout */}
+        <div className="grid grid-cols-4 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-[30rem] p-4 gap-4">
+          {/* Large left image spanning both rows */}
+          <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/200"
+              src={image1}
               alt="Image 01"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute w-full h-full object-fit"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">01</span>
-            </div>
           </div>
-          <div className="col-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+
+          {/* Top-right image */}
+          <div className="col-span-3 row-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/400"
+              src={image2}
               alt="Image 02"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute w-full h-full object-cover"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">02</span>
-            </div>
           </div>
 
-          {/* Middle container for 3, 6, and 7 */}
-          <div className="col-span-2 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+          {/* Large center image spanning both columns */}
+          <div className="col-span-2 row-span-2 bg-red-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/600"
-              alt="Image 03, 06, 07"
-              className="absolute inset-0 w-full h-full object-cover"
+              src={image3}
+              alt="Image 03"
+              className="absolute w-full h-full object-cover"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">03, 06, 07</span>
-            </div>
           </div>
 
-          <div className="row-span-3 col-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+          {/* Tall right image spanning both rows */}
+          <div className="col-span-1 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/200"
+              src={image4}
               alt="Image 04"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-fit"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">04</span>
-            </div>
           </div>
         </div>
 
-        <div className="grid grid-rows-2 mx-auto max-w-7xl bg-gray-200 grid-flow-col h-[20rem] p-4 gap-4">
-          <div className="row-span-3 col-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+        {/* Second Grid Layout */}
+        <div className="grid grid-cols-3 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-[20rem] px-4 pb-4 gap-4">
+          {/* Left large image */}
+          <div className="col-span-1 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/200"
+              src={image5}
               alt="Image 05"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute w-full h-full object-fit"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">05</span>
-            </div>
           </div>
-          <div className="row-span-3 col-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
+
+          {/* Right-side image (Adjusted col-span for proper alignment) */}
+          <div className="col-span-2 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://via.placeholder.com/200"
+              src={image6}
               alt="Image 08"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute w-full h-full object-fit"
             />
-            <div className="absolute inset-0 flex justify-center items-center bg-black opacity-50">
-              <span className="text-white text-4xl font-bold">08</span>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="h-[40rem] bg-gray-100 py-20">
-        <h1 className="text-3xl font-bold text-center text-teal-800 mb-2">
+      <section className="h-auto bg-gray-100 py-20">
+        <h1 className="text-4xl font-bold text-center text-teal-800 mb-2">
           Industries We Serve
         </h1>
         <h2 className="text-lg max-w-3xl mx-auto font-semibold text-center text-teal-500 mb-6">
           Himalaya Plast’s versatile gaskets are designed for various
           industries, offering high-performance sealing solutions
         </h2>
-
+      
         <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
           <div className="border-teal-800 border-4 h-[22rem] p-3">
-            <img src={image8} alt="" className="h-80 w-72"></img>
+            <img src={image3} alt="" className="h-80 w-72"></img>
             <h1 className="text-2xl font-semibold"></h1>
             <h4 className=""></h4>
           </div>
@@ -105,9 +101,12 @@ const Home = () => {
             <img src="" alt=""></img>
             <h1 className="text-8xl text-gray-200">01</h1>
             <h4 className="text-2xl font-semibold text-white">
-              {" "}
               Industrial Applications
             </h4>
+            <p className="text-white mt-2">
+              Our high-performance gaskets provide excellent sealing solutions
+              for heavy-duty industrial applications.
+            </p>
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
@@ -115,6 +114,10 @@ const Home = () => {
             <h4 className="text-2xl font-semibold text-white">
               Construction & Architecture
             </h4>
+            <p className="text-white mt-2">
+              Durable and weather-resistant gaskets designed for modern
+              construction and architectural projects.
+            </p>
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
@@ -122,6 +125,10 @@ const Home = () => {
             <h4 className="text-2xl font-semibold text-white">
               Custom Projects
             </h4>
+            <p className="text-white mt-2">
+              Tailored sealing solutions for unique and specialized applications
+              across different industries.
+            </p>
           </div>
         </div>
       </section>

@@ -1,10 +1,7 @@
 import image7 from "../assets/bgimages/image7.jpg";
 import { FaHandshake } from "react-icons/fa";
 
-
-
 const AboutSection = () => {
-
   const shopOpenedYear = 2000; // Replace with the year your shop opened
   const currentYear = new Date().getFullYear();
   const shopAge = currentYear - shopOpenedYear;
@@ -32,14 +29,14 @@ const AboutSection = () => {
           <h3 className="font-thin text- mb-6">Himalaya Plast Co.</h3>
 
           <p className="text-gray-600">
-            Himalaya Plast is a leading manufacturer of UPVC gaskets, providing
-            precision-engineered sealing solutions for a wide array of
-            industries. Since their inception, they have consistently combined
-            innovation, sustainability, and customer-centricity to redefine
-            excellence in gasket manufacturing. Their products deliver top
-            performance while contributing to environmental protection, making
-            them a trusted partner for businesses that prioritize both quality
-            and responsibility.
+            At Himalaya Plast, we take pride in being a leading manufacturer of
+            UPVC gaskets, delivering precision-engineered sealing solutions for
+            diverse industries. Since our inception, we have consistently driven
+            innovation, sustainability, and customer-centricity to set new
+            benchmarks in gasket manufacturing. Our products are designed for
+            superior performance while contributing to environmental
+            sustainability, making us a trusted partner for businesses that
+            value both quality and responsibility.
           </p>
           <div className="flex gap-4 pt-4">
             <img
@@ -47,7 +44,8 @@ const AboutSection = () => {
               alt="Signature"
               className="object-cover"
             />
-            <h1 className="pt-10">Inzamam Siddiqui</h1>
+            <h1 className="pt-10">Gulam Kibria Siddiqui <br/>- CEO & Founder</h1>
+            
           </div>
         </div>
 
@@ -58,13 +56,15 @@ const AboutSection = () => {
             Years of experience resulting from continuous useful work.
           </h3>
           <div className="rounded-lg bg-teal-400 p-4 shadow-xl h-[24rem]">
-          <div>
-            <FaHandshake className="w-24 h-24 text-teal-200"/>
-          </div>
+            <div>
+              <FaHandshake className="w-24 h-24 text-teal-100" />
+            </div>
             <h2 className="text-xl font-bold mb-2">Fair Prices</h2>
-            <p className="">The prices offered by us are not fixed and vary based on your needs
-            and the services provided, so that we can meet the needs of many
-            customers.</p>
+            <p className="">
+              The prices offered by us are not fixed and vary based on your
+              needs and the services provided, so that we can meet the needs of
+              many customers.
+            </p>
           </div>
         </div>
       </div>

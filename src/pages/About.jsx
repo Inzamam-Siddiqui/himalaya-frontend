@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div className="flex items-start space-x-4">
             <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-            <span className="font-bold text-teal-800">2</span>
+              <span className="font-bold text-teal-800">2</span>
             </div>
             <p className="text-gray-700">
               <strong>Certifications that Inspire Confidence:</strong> Achieved
@@ -74,7 +74,7 @@ const About = () => {
         </p>
       </section>
 
-      <section className="h-[50rem] bg-gradient-to-r from-teal-400 to-teal-600 text-white py-16">
+      <section className="h-[40rem] bg-gradient-to-r from-teal-400 to-teal-600 text-white py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Certifications and Achievements
@@ -125,7 +125,7 @@ const About = () => {
       <section className="h-auto py-20 bg-teal-100">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-teal-800 mb-6">
-            Proudly Made in India
+            Proudly Made in India 🇮🇳
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
             Himalaya Plast takes pride in manufacturing all products in India.

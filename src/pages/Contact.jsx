@@ -1,10 +1,9 @@
-// Follow Us
-// Links to social media or LinkedIn.
-// FAQs (Optional)
-// Answers to common customer queries.
+
 import ContactForm from "../components/ContactForm";
 import Map from "../components/Map";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Contact = () => {
   return (
@@ -37,9 +36,9 @@ const Contact = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-400 transition"
+                className="hover:text-black transition"
               >
-                <FaTwitter className="w-10 h-10" />
+                <FaXTwitter className="w-10 h-10" />
               </a>
               <a
                 href="https://instagram.com"
@@ -64,7 +63,7 @@ const Contact = () => {
           <div className="bg-teal-500 text-white p-10 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:translate-y-[-10px]">
             <span className="text-4xl">📧</span>
             <h3 className="text-xl font-semibold mt-4">Contact</h3>
-            <p className="mt-2 text-lg">contact@himalayaplast.com</p>
+            <p className="mt-2 text-lg">himalayaplast@gmail.com</p>
             <p className="mt-2 text-lg"> +91 93237 00157</p>
           </div>
 
@@ -85,43 +84,46 @@ const Contact = () => {
         <ContactForm />
       </section>
 
-      <section className="h-auto bg-teal-100 py-40 px-8 text-center">
-        <h2 className="text-4xl font-bold text-teal-900">Business Hours</h2>
-        <p className="font-medium text-2xl text-teal-700 mt-2">
-          We are available during these hours:
-        </p>
-        <div className="mt-6 text-xl space-y-4  text-teal-900">
-          <p>Monday - Saturday: <br/> 9:00 AM - 9:00 PM</p>
-          <p>Sunday: Closed</p>
+      <section className="bg-teal-100 py-16 px-8">
+        {/* Section Title */}
+        <h2 className="text-4xl text-teal-800 font-bold text-center mb-4"> Business Hours</h2>
+        <p className="text-2xl text-teal-500 text-center mb-6">Our schedule ensures smooth operations throughout the day.</p>
+        {/* Timings Table */}
+        <div className="max-w-2xl mx-auto bg-gray-50 shadow-md rounded-lg p-6">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr>
+                <th className="border-b py-2 text-lg font-medium text-gray-600">
+                  Day
+                </th>
+                <th className="border-b py-2 text-lg font-medium text-gray-600">
+                  Timing
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { day: "Monday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Tuesday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Wednesday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Thursday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Friday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Saturday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Sunday", timing: "Closed" },
+              ].map((slot, index) => (
+                <tr key={index} className="hover:bg-teal-100">
+                  <td className="py-3 px-4 border-b text-gray-700">
+                    {slot.day}
+                  </td>
+                  <td className="py-3 px-4 border-b text-gray-700">
+                    {slot.timing}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
-
-      <section className="h-auto bg-gray-100 py-16 px-8">
-  <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">
-    What Our Customers Say
-  </h2>
-  <div className="max-w-4xl mx-auto space-y-6">
-    <div className="bg-white p-6 rounded-lg shadow-md justify-start">
-      <p className="text-gray-700 italic">
-        {'"Excellent service and quality products. Highly recommended!"'}
-      </p>
-      <p className="text-gray-900 font-semibold mt-2">- John Doe</p>
-    </div>
-    <div className="bg-white p-6 rounded-lg shadow-md text-end">
-      <p className="text-gray-700 italic">
-        {'"Their customer support is amazing. Quick responses and very helpful!"'}
-      </p>
-      <p className="text-gray-900 font-semibold mt-2">- Sarah Khan</p>
-    </div>
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <p className="text-gray-700 italic">
-        {'"Their customer support is amazing. Quick responses and very helpful!"'}
-      </p>
-      <p className="text-gray-900 font-semibold mt-2">- Sarah Khan</p>
-    </div>
-  </div>
-</section>
-
     </div>
   );
 };
