@@ -1,5 +1,6 @@
 import Mission from "../components/Mission";
 import tiger from "../assets/logos/India.png";
+import image3 from "../assets/bgimages/image3.jpg"
 
 const About = () => {
   return (
@@ -62,7 +63,10 @@ const About = () => {
 
       <Mission />
 
-      <section className="h-[40rem] bg-teal-100 flex flex-col justify-center items-center text-center p-8">
+      <section
+        className="h-[40rem] flex flex-col justify-center items-center text-center p-8 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: {image3} }}
+      >
         <h2 className="text-4xl font-semibold text-teal-900 mb-4">
           Global Reach & Partnerships
         </h2>

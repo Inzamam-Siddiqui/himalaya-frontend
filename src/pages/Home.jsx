@@ -90,10 +90,12 @@ const Home = () => {
           Himalaya Plast’s versatile gaskets are designed for various
           industries, offering high-performance sealing solutions
         </h2>
-      
+
         <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
-          <div className="border-teal-800 border-4 h-[22rem] p-3">
-            <img src={image3} alt="" className="h-80 w-72"></img>
+          <div
+            className="border-teal-800 border-4 h-[22rem] p-3 bg-cover bg-center w-72"
+            style={{ backgroundImage: `url(${image3})` }}
+          >
             <h1 className="text-2xl font-semibold"></h1>
             <h4 className=""></h4>
           </div>

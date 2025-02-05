@@ -1,4 +1,9 @@
 import { FaLeaf, FaRecycle, FaCloudSun, FaHandshake, FaUsers } from "react-icons/fa"
+// import planet1 from "../assets/bgimages/planet1.jpg"
+import planet2 from "../assets/bgimages/planet2.jpg"
+// import planet3 from "../assets/bgimages/planet3.jpg"
+import zero2 from "../assets/bgimages/zero2.jpg"
+
 
 const Sustainability = () => {
   return (
@@ -81,7 +86,7 @@ const Sustainability = () => {
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8">
             <img
-              src="https://via.placeholder.com/500"
+              src={zero2}
               alt="Zero Waste Concept"
               className="rounded-2xl shadow-lg"
             />
@@ -228,7 +233,7 @@ const Sustainability = () => {
         </div>
       </div>
     </section>
-    <section className="bg-gray-70 py-20">
+    <section className="bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-700 mb-6">
@@ -246,7 +251,7 @@ const Sustainability = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <img
-              src="https://via.placeholder.com/600x400"
+              src={planet2}
               alt="Sustainable Future"
               className="rounded-2xl shadow-md"
             />
