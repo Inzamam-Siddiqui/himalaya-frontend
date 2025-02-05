@@ -8,11 +8,13 @@ import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import ProductCard from './components/ProductCard';
 import Sustainability from './pages/Sustainability';
+import PageTitleUpdater from './components/PageTitleUpdater';
 
 const App = () => {
     return (
         <Router>
           <Navbar/>
+          <PageTitleUpdater/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Products/>} />
