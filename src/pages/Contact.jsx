@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Contact = () => {
   return (
     <div className="">
-      <section className="min-h-[45rem] bg-teal-100 flex flex-col items-center justify-center space-y-6 pt-40 px-4">
+      <section className="min-h-[45rem] bg-teal-100 flex flex-col items-center justify-center space-y-6 pt-24 px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-teal-900 text-center">
           Contact Information
         </h1>
@@ -78,10 +78,9 @@ const Contact = () => {
       </section>
 
       <section className="h-auto bg-gray-100 grid grid-cols-1 md:grid-cols-2 py-16 px-6 md:px-12 lg:px-24 gap-12 md:gap-20">
-  <Map />
-  <ContactForm />
-</section>
-
+        <Map />
+        <ContactForm />
+      </section>
 
       <section className="bg-teal-100 py-16 px-8">
         {/* Section Title */}
@@ -115,7 +114,7 @@ const Contact = () => {
                 { day: "Saturday", timing: "10:00 AM - 6:00 PM" },
                 { day: "Sunday", timing: "Closed" },
               ].map((slot, index) => (
-                <tr key={index} className="hover:bg-teal-100">
+                <tr key={index} className="hover:bg-teal-400">
                   <td className="py-3 px-4 border-b text-gray-700">
                     {slot.day}
                   </td>
@@ -126,6 +125,32 @@ const Contact = () => {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section className="bg-gray-100 py-20 text-center">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+          Thank You for Visiting!
+        </h2>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+          We appreciate you taking the time to explore our website. We hope you
+          found everything you were looking for. If you have any questions or
+          need assistance, feel free to get in touch. We look forward to
+          connecting with you again soon. Have an amazing day ahead!
+        </p>
+        <div className="flex justify-center gap-8">
+          <a
+            href="/"
+            className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
+          >
+            Back to Home
+          </a>
+          <a
+            href="mailto:himalayaplast@gmail.com"
+            className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
+          >
+            Send Another Message
+          </a>
         </div>
       </section>
     </div>

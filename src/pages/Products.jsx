@@ -15,29 +15,32 @@ const Products = () => {
         </p>
       </div>
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-    {products.slice(0, 9).map((product) => (
-      <div
-        key={product.id}
-        className="bg-teal-200 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-2"
-      >
-        <Link to={`/products/${product.id}`} className="block text-center">
-          <img
-            src={product?.image}
-            alt={product.name}
-            className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover p-6 md:p-8"
-          />
-          <h2 className="text-lg md:text-xl bg-white font-bold text-teal-800 h-16 md:h-20 rounded-t-xl py-3 md:py-4">
-            {product.name}
-          </h2>
-          <p className="text-sm md:text-md text-white bg-teal-600 h-10 md:h-12 rounded-t-xl pt-3 md:pt-4">
-            Discover more about this product
-          </p>
-        </Link>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          {products.slice(0, 9).map((product) => (
+            <div
+              key={product.id}
+              className="bg-teal-200 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-2"
+            >
+              <Link
+                to={`/products/${product.id}`}
+                className="block text-center"
+              >
+                <img
+                  src={product?.image}
+                  alt={product.name}
+                  className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover p-6 md:p-8"
+                />
+                <h2 className="text-lg md:text-xl bg-white font-bold text-teal-800 h-16 md:h-20 rounded-t-xl py-3 md:py-4">
+                  {product.name}
+                </h2>
+                <p className="text-sm md:text-md text-white bg-teal-600 h-10 md:h-12 rounded-t-xl pt-3 md:pt-4">
+                  Discover more about this product
+                </p>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
       <div className="max-w-lg md:max-w-2xl lg:max-w-7xl mx-auto w-full md:w-[25rem] mt-12 relative group">
         {/* Product 10 Card */}

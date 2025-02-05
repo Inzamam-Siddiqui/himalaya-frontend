@@ -1,6 +1,6 @@
 import Mission from "../components/Mission";
 import tiger from "../assets/logos/India.png";
-import image3 from "../assets/bgimages/image3.jpg"
+import image3 from "../assets/bgimages/image3.jpg";
 
 const About = () => {
   return (
@@ -64,13 +64,13 @@ const About = () => {
       <Mission />
 
       <section
-        className="h-[40rem] flex flex-col justify-center items-center text-center p-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: {image3} }}
+        className="h-[40rem] flex flex-col justify-center items-center text-center p-8 bg-cover bg-center bg-no-repeat opacity-80"
+        style={{ backgroundImage: `url(${image3})` }} // Make sure image3 is a valid image path
       >
-        <h2 className="text-4xl font-semibold text-teal-900 mb-4">
+        <h2 className="text-4xl font-semibold text-teal-500 mb-4">
           Global Reach & Partnerships
         </h2>
-        <p className="text-lg mx-auto max-w-4xl text-teal-700 mb-6">
+        <p className="text-lg mx-auto max-w-4xl text-teal-400 mb-6">
           We are proud to have established strong partnerships around the world,
           extending our influence and impact in diverse markets. Our global
           network allows us to serve our clients with unmatched expertise and
