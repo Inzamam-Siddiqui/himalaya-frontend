@@ -25,7 +25,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mt-4">Visit Us</h3>
             <div className="flex space-x-8 pt-10">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/18boex2m7K/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 transition"
@@ -33,7 +33,7 @@ const Contact = () => {
                 <FaFacebook className="w-10 h-10" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/HimalayaPlast?t=tnA_v8Kv3yUpc848955tDg&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition"
@@ -41,7 +41,7 @@ const Contact = () => {
                 <FaXTwitter className="w-10 h-10" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/himalaya.plast?igsh=MW5rdjU0ZjcyeXNydg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-pink-500 transition"
@@ -49,7 +49,7 @@ const Contact = () => {
                 <FaInstagram className="w-10 h-10" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.linkedin.com/company/himalayaplast/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-800 transition"
@@ -59,7 +59,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Email Box */}
           <div className="bg-teal-500 text-white p-10 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:translate-y-[-10px]">
             <span className="text-4xl">📧</span>
             <h3 className="text-xl font-semibold mt-4">Contact</h3>

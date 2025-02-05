@@ -2,7 +2,6 @@ import hplogo from "../assets/logos/hplogo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-
 const Footer = () => {
   return (
     <div className="bg-gradient-to-b from-teal-500 to-90% via-teal-700 to-teal-900 text-white">
@@ -33,10 +32,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/products"
-                  className="hover:text-teal-300 transition"
-                >
+                <a href="/products" className="hover:text-teal-300 transition">
                   Products
                 </a>
               </li>
@@ -48,8 +44,6 @@ const Footer = () => {
                   Sustainability
                 </a>
               </li>
-              
-             
             </ul>
           </div>
 
@@ -58,32 +52,16 @@ const Footer = () => {
             <p className="text-xl font-medium mb-4">LINKS</p>
             <ul className="flex flex-col gap-2">
               <li>
-                <a
-                  
-                  className="hover:text-teal-300 transition"
-                >
-                  Careers
-                </a>
+                <a className="hover:text-teal-300 transition">Careers</a>
               </li>
               <li>
-                <a  className="hover:text-teal-300 transition">
-                  Terms
-                </a>
+                <a className="hover:text-teal-300 transition">Terms</a>
               </li>
               <li>
-                <a
-                  className="hover:text-teal-300 transition"
-                >
-                  Privacy
-                </a>
+                <a className="hover:text-teal-300 transition">Privacy</a>
               </li>
               <li>
-                <a
-                  
-                  className="hover:text-teal-300 transition"
-                >
-                  Cookies
-                </a>
+                <a className="hover:text-teal-300 transition">Cookies</a>
               </li>
             </ul>
           </div>
@@ -100,10 +78,17 @@ const Footer = () => {
                   himalayaplast@gmail.com
                 </a>
               </li>
-              <li> +91 93237 00157</li>
+              <li>
+                <a
+                  href="tel:+919323700157"
+                  className="text-teal-500 hover:underline"
+                >
+                  +91 93237 00157
+                </a>
+              </li>
               <li className="flex space-x-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/18boex2m7K/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-600 transition"
@@ -111,7 +96,7 @@ const Footer = () => {
                   <FaFacebook />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/HimalayaPlast?t=tnA_v8Kv3yUpc848955tDg&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-black transition"
@@ -119,7 +104,7 @@ const Footer = () => {
                   <FaXTwitter />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/himalaya.plast?igsh=MW5rdjU0ZjcyeXNydg=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-pink-500 transition"
@@ -127,7 +112,7 @@ const Footer = () => {
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.linkedin.com/company/himalayaplast/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-800 transition"
