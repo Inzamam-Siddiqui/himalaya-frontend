@@ -33,7 +33,7 @@ const Mission = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto text-center px-4">
         <h1 className="text-4xl font-bold text-gray-800 mb-8">
           Mission, Vision, and Values

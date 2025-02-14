@@ -13,7 +13,7 @@ const PageTitleUpdater = () => {
       "/products": "Himalaya Plast | Products",
     };
 
-    document.title = pageTitle[location.pathname] || "My App";
+    document.title = pageTitle[location.pathname] || "Himalaya Plast";
   }, [location]);
 
   return null;

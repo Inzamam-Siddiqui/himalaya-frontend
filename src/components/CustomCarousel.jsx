@@ -6,9 +6,21 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const CustomCarousel = () => {
   const slides = [
-    { image: image1, text: "Welcome to Our Website",description:"We are dedicated to providing you with the best possible experience." },
-    { image: image2, text: "Explore Our Features" ,description:"Discover our range of products and services that cater to your needs."},
-    { image: image3, text: "Get in Touch with Us",description:"Feel free to reach out to us for any inquiries or assistance." },
+    {
+      image: image1,
+      text: "Precision-Engineered UPVC Gaskets",
+      description: "Crafting high-quality sealing solutions for diverse industries with innovation and precision.",
+    },
+    {
+      image: image2,
+      text: "Sustainability Meets Performance",
+      description: "Our gaskets ensure superior performance while contributing to environmental responsibility.",
+    },
+    {
+      image: image3,
+      text: "Your Trusted Manufacturing Partner",
+      description: "Delivering reliability, innovation, and excellence in gasket manufacturing since our inception.",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

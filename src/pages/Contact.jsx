@@ -132,7 +132,7 @@ const Contact = () => {
         <h2 className="text-3xl font-semibold text-gray-900 mb-4">
           Thank You for Visiting!
         </h2>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+        <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
           We appreciate you taking the time to explore our website. We hope you
           found everything you were looking for. If you have any questions or
           need assistance, feel free to get in touch. We look forward to
@@ -149,7 +149,7 @@ const Contact = () => {
             href="mailto:himalayaplast@gmail.com"
             className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
           >
-            Send Another Message
+            Send  Message
           </a>
         </div>
       </section>

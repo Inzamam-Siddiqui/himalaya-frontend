@@ -78,7 +78,7 @@ const About = () => {
         </p>
       </section>
 
-      <section className="h-auto bg-gradient-to-r from-teal-400 to-teal-600 text-white px-4 py-16">
+      <section className="h-auto bg-gradient-to-r from-teal-400 to-teal-600 text-white px-4 py-24">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Certifications and Achievements
