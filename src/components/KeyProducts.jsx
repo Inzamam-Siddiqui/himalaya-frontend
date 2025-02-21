@@ -22,7 +22,7 @@ const KeyProducts = () => {
               <img
                 src=""
                 alt={product.name}
-                className="h-44 object-cover rounded-lg bg-white"
+                className="h-44 object-cover rounded-lg bg-gray-100"
               />
             </div>
             <h1 className="text-xl font-semibold text-gray-800 mb-4">

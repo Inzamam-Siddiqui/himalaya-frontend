@@ -1,8 +1,12 @@
 // products.js
+import prod1 from "../assets/products/prod1.jpeg"
+import prod2 from "../assets/products/prod2.jpeg"
+
 
 export const products = [
   {
     id: 1,
+    image:prod1,
     name: "uPVC Door and Window Gaskets",
     description:
       "Our uPVC door and window gaskets are designed to provide optimal sealing performance for residential and commercial window and door systems. These gaskets play a critical role in ensuring that your door and window systems are resistant to sound, water, and dust infiltration, improving the overall energy efficiency and longevity of the structure. The durability, cost-effectiveness, and low maintenance requirements make our gaskets the preferred choice in the industry.",
@@ -65,6 +69,7 @@ export const products = [
   {
     id: 2,
     name: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals",
+    image:prod2,
     description:
       "With the growing demand for high-rise buildings and cutting-edge architectural designs, aluminum door, window, and facade systems have become the go-to choice for their strength, aesthetic appeal, and high wind resistance. A key challenge with aluminum curtain wall systems has traditionally been heat loss. However, with the development of advanced thermal insulation gaskets, these concerns are now being effectively addressed, making aluminum systems more energy-efficient and increasingly popular.",
     features: [

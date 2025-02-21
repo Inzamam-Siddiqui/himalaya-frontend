@@ -129,7 +129,7 @@ const About = () => {
       <section className="h-auto py-20 bg-teal-100 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-teal-800 mb-6">
-            Proudly Made in India 🇮🇳
+            Proudly Made in India 
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
             Himalaya Plast takes pride in manufacturing all products in India.
