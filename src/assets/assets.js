@@ -1,6 +1,8 @@
 // products.js
 import prod1 from "../assets/products/prod1.jpeg"
 import prod2 from "../assets/products/prod2.jpeg"
+import prod3 from "../assets/products/prod3.jpeg"
+
 
 
 export const products = [
@@ -97,6 +99,7 @@ export const products = [
   {
     id: 3,
     name: "Pipe Seals & Gaskets",
+    image:prod3,
     description:
       "Himalaya Plast specializes in the manufacturing of high-performance Pipe Seals & Gaskets designed for use in a wide range of piping systems. These gaskets serve as critical components for providing insulation, preventing leaks, and absorbing vibrations in piping systems. Our TPE-based pipe seals are an ideal solution for ensuring reliable, long-lasting performance, especially in systems exposed to challenging environmental conditions.",
     features: [
