@@ -72,10 +72,10 @@ const Footer = () => {
             <ul className="flex flex-col gap-2">
               <li>
                 <a
-                  href="mailto:himalayaplast@gmail.com"
+                  href="mailto:info@himalayaplast.com"
                   className="hover:text-blue-300 transition"
                 >
-                  himalayaplast@gmail.com
+                  info@himalayaplast.com
                 </a>
               </li>
               <li>

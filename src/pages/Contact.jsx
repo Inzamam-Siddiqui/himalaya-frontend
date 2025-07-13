@@ -61,7 +61,7 @@ const Contact = () => {
           <div className="bg-teal-500 text-white p-8 md:p-10 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:-translate-y-2">
             <span className="text-4xl">📧</span>
             <h3 className="text-lg md:text-xl font-semibold mt-4">Contact</h3>
-            <p className="mt-2 text-sm md:text-lg">himalayaplast@gmail.com</p>
+            <p className="mt-2 text-sm md:text-lg">info@himalayaplast.com</p>
             <p className="mt-2 text-sm md:text-lg">+91 93237 00157</p>
           </div>
 
@@ -146,7 +146,7 @@ const Contact = () => {
             Back to Home
           </a>
           <a
-            href="mailto:himalayaplast@gmail.com"
+            href="mailto:info@himalayaplast.com"
             className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
           >
             Send  Message

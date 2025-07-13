@@ -4,7 +4,7 @@ import {products} from "../assets/assets.js"
 const KeyProducts = () => {
 
   return (
-    <section className="p-10 bg-gray-100">
+    <section className="py-20 bg-gray-100">
       <h1 className="text-3xl font-bold text-center text-teal-800 mb-2">
         Our Key Products
       </h1>
@@ -20,9 +20,9 @@ const KeyProducts = () => {
           >
             <div className="flex justify-center mb-4">
               <img
-                src=""
-                alt={product.name}
-                className="h-44 object-cover rounded-lg bg-gray-100"
+                 src={product?.image}
+                 alt={product.name}
+                className=" object-cover rounded-lg bg-gray-100"
               />
             </div>
             <h1 className="text-xl font-semibold text-gray-800 mb-4">

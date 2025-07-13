@@ -8,3 +8,21 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation-name: scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: var(--animation-direction);
+  animation-duration: var(--animation-duration);
+}
+

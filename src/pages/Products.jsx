@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { products } from "../assets/assets.js";
+import j from "../assets/products/I_02.jpg"
 
 const Products = () => {
   return (
@@ -53,7 +54,7 @@ const Products = () => {
             className="block text-center"
           >
             <img
-              src={products[9].image}
+              src={j}
               alt={products[9].name}
               className="w-full h-64 md:h-80 object-cover p-6 md:p-10"
             />

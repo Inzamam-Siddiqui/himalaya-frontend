@@ -4,13 +4,8 @@ import AboutSection from "../components/AboutSection";
 import KeyProducts from "../components/KeyProducts";
 import { FaRecycle, FaHandshake, FaLeaf } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import image1 from "../assets/bgimages/image1.jpg";
-import image2 from "../assets/bgimages/image2.jpg";
-import image3 from "../assets/bgimages/image3.jpg";
-import image4 from "../assets/bgimages/image4.jpg";
-import image5 from "../assets/bgimages/image8.jpg";
-import image6 from "../assets/bgimages/image7.jpg";
-
+import tpe1 from "../assets/products/tpe1.jpg";
+import tpe2 from "../assets/products/tpe2.png";
 const Home = () => {
   return (
     <div className="">
@@ -21,63 +16,91 @@ const Home = () => {
       <KeyProducts />
 
       <section className="bg-teal-100 py-20">
-        {/* First Grid Layout */}
+        <h1 className="text-4xl font-bold text-center text-teal-800 mb-8">
+          Thermoplastic Elastomers (TPE)
+        </h1>
         <div className="grid grid-cols-4 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-[30rem] p-4 gap-4">
-          {/* Large left image spanning both rows */}
+          <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+            <h2 className="text-xl font-bold text-teal-800">
+              About TPE — Thermoplastic Elastomers (TPE)
+            </h2>
+            <p className="text-teal-700 mt-2">
+              Thermoplastic Elastomers (TPE) are cutting-edge materials that
+              combine the processing advantages of plastics with the functional
+              properties of rubber. TPEs can be stretched, flexed, and shaped
+              with excellent durability.
+            </p>
+            <p className="text-teal-700 mt-2 font-semibold italic">
+              “Stretch Beyond Limits. Build Beyond Imagination.”
+            </p>
+          </div>
+
+          <div className="col-span-3 row-span-1 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+            <h2 className="text-xl font-bold text-teal-800">Why Choose TPE?</h2>
+            <p className="text-teal-700 mt-2">
+              TPEs offer the perfect balance between performance and
+              sustainability. Here’s why TPE is the future of material
+              engineering:
+            </p>
+            <ul className="text-teal-700 mt-2 list-disc pl-5">
+              <li>
+                <strong>Highly Versatile:</strong> Moldable, extrudable, and
+                recyclable — for maximum manufacturing efficiency.
+              </li>
+              <li>
+                <strong>Eco-Friendly Materials:</strong> Our TPE compounds are
+                100% recyclable and contribute to sustainable manufacturing
+                practices.
+              </li>
+              <li>
+                <strong>Customizable Solutions:</strong> Tailored hardness,
+                flexibility, colors, and finishes to meet specific project
+                demands.
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+            <h2 className="text-xl font-bold text-teal-800">
+              Advantages of Choosing Himalaya Plast{"'"}s TPE
+            </h2>
+            <ul className="text-teal-700 mt-2 list-disc pl-5">
+              <li>Exceptional soft-touch aesthetics</li>
+              <li>Superior UV and weather resistance</li>
+              <li>Excellent chemical and abrasion resistance</li>
+              <li>Strong adhesion to substrates like PP, ABS, and PC</li>
+              <li>
+                Fast delivery, color customization, and dedicated technical
+                support
+              </li>
+            </ul>
+            <p className="text-teal-700 mt-4 font-semibold italic">
+              “Feel the Difference. Experience the Performance.”
+            </p>
+          </div>
+
           <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image1}
-              alt="Image 01"
-              className="absolute w-full h-full object-fit"
-            />
-          </div>
-
-          {/* Top-right image */}
-          <div className="col-span-3 row-span-1 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image2}
-              alt="Image 02"
-              className="absolute w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Large center image spanning both columns */}
-          <div className="col-span-2 row-span-2 bg-red-500 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image3}
-              alt="Image 03"
-              className="absolute w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Tall right image spanning both rows */}
-          <div className="col-span-1 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image4}
-              alt="Image 04"
-              className="absolute inset-0 w-full h-full object-fit"
-            />
+            <img src={tpe1} className="object-cover" />
           </div>
         </div>
 
-        {/* Second Grid Layout */}
-        <div className="grid grid-cols-3 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-[20rem] px-4 pb-4 gap-4">
-          {/* Left large image */}
-          <div className="col-span-1 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image5}
-              alt="Image 05"
-              className="absolute w-full h-full object-fit"
-            />
+        <div className="grid grid-cols-3 grid-rows-2 mx-auto max-w-7xl bg-teal-500  px-4 pb-4 gap-4">
+          <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl">
+            <img src={tpe2} alt="" />
           </div>
 
-          {/* Right-side image (Adjusted col-span for proper alignment) */}
-          <div className="col-span-2 row-span-2 bg-purple-500 relative rounded-lg overflow-hidden shadow-xl">
-            <img
-              src={image6}
-              alt="Image 08"
-              className="absolute w-full h-full object-fit"
-            />
+          {/* Right-side content */}
+          <div className="col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+            <h2 className="text-xl font-bold text-teal-800">
+              Applications of TPE
+            </h2>
+            <ul className="text-teal-700 mt-2 list-disc pl-5">
+              <li>Automotive: Weather seals, mats, soft-touch interiors.</li>
+              <li>Medical: Biocompatible tubing, syringe seals.</li>
+              <li>Consumer Products: Phone cases, kitchen utensils.</li>
+              <li>Industrial: Gaskets, seals, cable insulation.</li>
+              <li>Sports: Fitness equipment, protective gear.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -92,16 +115,18 @@ const Home = () => {
         </h2>
 
         <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
-          <div
-            className="border-teal-800 border-4 h-[22rem] p-3 bg-cover bg-center w-72"
-            style={{ backgroundImage: `url(${image3})` }}
-          >
-            <h1 className="text-2xl font-semibold"></h1>
-            <h4 className=""></h4>
-          </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
             <h1 className="text-8xl text-gray-200">01</h1>
+            <h4 className="text-2xl font-semibold text-white">Automobile</h4>
+            <p className="text-white mt-2">
+              Reliable TPE solutions built for automotive strength, flexibility,
+              and long-lasting performance.
+            </p>
+          </div>
+          <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
+            <img src="" alt=""></img>
+            <h1 className="text-8xl text-gray-200">02</h1>
             <h4 className="text-2xl font-semibold text-white">
               Industrial Applications
             </h4>
@@ -112,7 +137,7 @@ const Home = () => {
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">02</h1>
+            <h1 className="text-8xl text-gray-200">03</h1>
             <h4 className="text-2xl font-semibold text-white">
               Construction & Architecture
             </h4>
@@ -123,7 +148,7 @@ const Home = () => {
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">03</h1>
+            <h1 className="text-8xl text-gray-200">04</h1>
             <h4 className="text-2xl font-semibold text-white">
               Custom Projects
             </h4>
@@ -149,8 +174,8 @@ const Home = () => {
             <li className="flex items-center space-x-3">
               <FaLeaf className="text-green-700" />
               <span>
-                <strong>Eco-Friendly Innovation:</strong> Use of recyclable
-                materials like TPE reduces environmental impact.
+                <strong>Eco-Friendly Innovation:</strong> TPE is 100%
+                recyclable, hence reduces environmental impact.
               </span>
             </li>
             <li className="flex items-center space-x-3 ">
@@ -163,9 +188,9 @@ const Home = () => {
             <li className="flex items-center space-x-3">
               <FaStar className="text-yellow-300" />
               <span>
-                <strong>Certified Excellence:</strong> ISO 14001 and ISO 45001
-                certifications validate their commitment to sustainability and
-                quality.
+                <strong>Certified Excellence:</strong> ISO-certified and
+                RoHS-compliant — our products meet global benchmarks for
+                quality, safety, and environmental responsibility.
               </span>
             </li>
             <li className="flex items-center space-x-3 ">

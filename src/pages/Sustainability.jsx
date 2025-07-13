@@ -5,6 +5,9 @@ import {
   FaHandshake,
   FaUsers,
 } from "react-icons/fa";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+
+
 // import planet1 from "../assets/bgimages/planet1.jpg"
 import planet2 from "../assets/bgimages/planet2.jpg";
 // import planet3 from "../assets/bgimages/planet3.jpg"
@@ -44,8 +47,8 @@ const Sustainability = () => {
                   of applications.
                 </li>
                 <li>
-                  <strong>Recyclable:</strong> Can be reprocessed multiple times
-                  without quality loss.
+                  <strong>Recyclable:</strong> Can be reprocessed multiple
+                  times.
                 </li>
                 <li>
                   <strong>Safe & High-Performance:</strong> Durable and safe for
@@ -81,12 +84,9 @@ const Sustainability = () => {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 At Himalaya Plast, we prioritize sustainability at every step of
-                the production process. The thermoplastic nature of TPE allows
-                us to reprocess all waste materials in-house, ensuring that no
-                product is wasted and that our carbon footprint is minimized. By
-                reusing waste material, we contribute to a circular economy,
-                reducing the need for virgin resources and minimizing
-                environmental impact.
+                the production process ensuring that no product is wasted and
+                that our carbon footprint is minimized. By reusing waste
+                material, we contribute to a circular economy.
               </p>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8">
@@ -110,15 +110,28 @@ const Sustainability = () => {
               </p>
               <ul className="list-disc list-inside text-gray-700 mt-4 space-y-3">
                 <li>
-                  <strong>ISO 14001:</strong> Demonstrates our commitment to
-                  environmental responsibility through the implementation of an
-                  Environmental Management System (EMS), ensuring reduced waste,
-                  pollution, and energy consumption.
+                  <strong>ISO 9001:2015:</strong> Quality management that
+                  minimizes waste and ensures consistency.
                 </li>
                 <li>
-                  <strong>ISO 45001:</strong> Reflects our dedication to
-                  occupational health and safety, protecting both employees and
-                  the environment.
+                  <strong>ISO 14001:</strong> Environmental systems to reduce
+                  emissions and resource consumption.
+                </li>
+                <li>
+                  <strong>ISO 45001:</strong> Safe, compliant, and people-first
+                  workplaces.
+                </li>
+                <li>
+                  <strong>ISO 50001:</strong> Certified energy efficiency across
+                  operations.
+                </li>
+                <li>
+                  <strong>RoHS Compliant:</strong> Free from hazardous
+                  substances.
+                </li>
+                <li>
+                  <strong>UV Resistant:</strong> Engineered for long-term
+                  outdoor durability.
                 </li>
               </ul>
             </div>
@@ -132,113 +145,79 @@ const Sustainability = () => {
           </div>
         </div>
       </section>
+
       <section className="bg-teal-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          {/* Our Approach to Sustainability */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-teal-900 mb-6">
-              Our Approach to Sustainability
-            </h2>
-            <p className="text-lg text-teal-700 leading-relaxed max-w-5xl mx-auto">
-              For years, we have focused on reducing waste, lowering our carbon
-              footprint, and enhancing the efficiency of our operations. By
-              investing in advanced recycling technologies, improving raw
-              material selection, and fostering a culture of sustainability
-              within our organization, we have made significant strides in
-              reducing environmental impact. Our sustainability efforts are not
-              just about protecting the environment; they also contribute to the
-              long-term success of our business, ensuring that we remain an
-              industry leader in both innovation and responsibility.
-            </p>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+    {/* Header Section */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-teal-900 mb-6">
+        Our Approach to Sustainability
+      </h2>
+      <p className="text-lg text-teal-700 leading-relaxed max-w-5xl mx-auto">
+        For years, we have focused on reducing waste, lowering our carbon
+        footprint, and enhancing the efficiency of our operations. By improving
+        raw material selection and fostering a culture of sustainability within
+        our organization, we have made significant strides in reducing
+        environmental impact. Our sustainability efforts are not just about
+        protecting the environment; they also contribute to the long-term success
+        of our business, ensuring that we remain an industry leader in both
+        innovation and responsibility.
+      </p>
+    </div>
 
-          {/* Our Sustainability Commitments */}
+    {/* Sustainability Commitments Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {[
+        {
+          icon: <FaLeaf className="text-teal-800 text-3xl" />,
+          title: "Energy, Water, and Material Conservation",
+          description:
+            "We are committed to reducing the consumption of energy, water, and raw materials, ensuring that our production processes are as efficient as possible.",
+        },
+        {
+          icon: <FaRecycle className="text-teal-800 text-3xl" />,
+          title: "Recycling Investment",
+          description:
+            "We actively encourage and invest in recycling initiatives to ensure that waste is minimized, and materials are repurposed to reduce the need for new resources.",
+        },
+        {
+          icon: <FaCloudSun className="text-teal-800 text-3xl" />,
+          title: "Carbon Footprint Reduction",
+          description:
+            "We aim to decrease CO2 emissions through the adoption of energy-efficient technologies, improved manufacturing processes, and more sustainable delivery methods.",
+        },
+        {
+          icon: <FaHandshake className="text-teal-800 text-3xl" />,
+          title: "Supplier Engagement",
+          description:
+            "We collaborate with our suppliers to encourage environmentally responsible practices throughout the supply chain, ensuring that sustainability is a shared responsibility.",
+        },
+        {
+          icon: <FaUsers className="text-teal-800 text-3xl" />,
+          title: "Staff Engagement",
+          description:
+            "We foster a culture of sustainability within our workforce, empowering our employees to contribute to our environmental goals through awareness programs and eco-friendly practices.",
+        },
+        {
+          icon: <AiFillSafetyCertificate className="text-teal-800 text-3xl" />,
+          title: "Certified by Global Standards",
+          description:
+            "Guided by globally recognized frameworks like ISO and RoHS, our sustainability practices are structured, independently audited, and aligned with modern industry expectations.",
+        },
+      ].map(({ icon, title, description }, index) => (
+        <div key={index} className="flex items-start space-x-4">
+          <div className="bg-teal-200 p-4 rounded-full">{icon}</div>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-4 rounded-full">
-                  <FaLeaf className="text-teal-800 text-3xl" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-teal-800">
-                    Energy, Water, and Material Conservation
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed">
-                    We are committed to reducing the consumption of energy,
-                    water, and raw materials, ensuring that our production
-                    processes are as efficient as possible.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-4 rounded-full">
-                  <FaRecycle className="text-teal-800 text-3xl" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-teal-800">
-                    Recycling Investment
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed">
-                    We actively encourage and invest in recycling initiatives to
-                    ensure that waste is minimized, and materials are repurposed
-                    to reduce the need for new resources.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-4 rounded-full">
-                  <FaCloudSun className="text-teal-800 text-3xl" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-teal-800">
-                    Carbon Footprint Reduction
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed">
-                    We aim to decrease CO2 emissions through the adoption of
-                    energy-efficient technologies, improved manufacturing
-                    processes, and more sustainable delivery methods.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-4 rounded-full">
-                  <FaHandshake className="text-teal-800 text-3xl" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-teal-800">
-                    Supplier Engagement
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed">
-                    We collaborate with our suppliers to encourage
-                    environmentally responsible practices throughout the supply
-                    chain, ensuring that sustainability is a shared
-                    responsibility.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-4 rounded-full">
-                  <FaUsers className="text-teal-800 text-3xl" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-teal-800">
-                    Staff Engagement
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed">
-                    We foster a culture of sustainability within our workforce,
-                    empowering our employees to contribute to our environmental
-                    goals through awareness programs and eco-friendly practices.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <h4 className="text-xl font-semibold text-teal-800">{title}</h4>
+            <p className="text-teal-700 leading-relaxed">{description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
       <section className="bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">

@@ -1,14 +1,27 @@
-// products.js
-import prod1 from "../assets/products/prod1.jpeg"
-import prod2 from "../assets/products/prod2.jpeg"
-import prod3 from "../assets/products/prod3.jpeg"
 
+import a from "../assets/products/A.jpg"
+import b from "../assets/products/B.jpg"
+import c from "../assets/products/C.jpg"
+import d from "../assets/products/D.jpg"
+import e from "../assets/products/E.jpg"
+import f from "../assets/products/F.jpg"
+import g from "../assets/products/G.jpg"
+import h from "../assets/products/H.jpg"
+import i from "../assets/products/I_01.jpg"
+
+import a1 from "../assets/products/1.1.jpg"
+import a2 from "../assets/products/1.2.png"
+import b1 from "../assets/products/2.1.jpg"
+import b2 from "../assets/products/2.2.jpg"
+import c1 from "../assets/products/3.1.jpg"
+import c2 from "../assets/products/3.2.jpg"
 
 
 export const products = [
   {
     id: 1,
-    image:prod1,
+    image:a,
+    bannerImage:{a1,a2},
     name: "uPVC Door and Window Gaskets",
     description:
       "Our uPVC door and window gaskets are designed to provide optimal sealing performance for residential and commercial window and door systems. These gaskets play a critical role in ensuring that your door and window systems are resistant to sound, water, and dust infiltration, improving the overall energy efficiency and longevity of the structure. The durability, cost-effectiveness, and low maintenance requirements make our gaskets the preferred choice in the industry.",
@@ -71,7 +84,8 @@ export const products = [
   {
     id: 2,
     name: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals",
-    image:prod2,
+    image:b,
+    bannerImage:{b1,b2},
     description:
       "With the growing demand for high-rise buildings and cutting-edge architectural designs, aluminum door, window, and facade systems have become the go-to choice for their strength, aesthetic appeal, and high wind resistance. A key challenge with aluminum curtain wall systems has traditionally been heat loss. However, with the development of advanced thermal insulation gaskets, these concerns are now being effectively addressed, making aluminum systems more energy-efficient and increasingly popular.",
     features: [
@@ -99,7 +113,8 @@ export const products = [
   {
     id: 3,
     name: "Pipe Seals & Gaskets",
-    image:prod3,
+    image:f,
+    bannerImage:{c1,c2},
     description:
       "Himalaya Plast specializes in the manufacturing of high-performance Pipe Seals & Gaskets designed for use in a wide range of piping systems. These gaskets serve as critical components for providing insulation, preventing leaks, and absorbing vibrations in piping systems. Our TPE-based pipe seals are an ideal solution for ensuring reliable, long-lasting performance, especially in systems exposed to challenging environmental conditions.",
     features: [
@@ -108,7 +123,7 @@ export const products = [
     ],
     advantages: [
       "Environmentally Friendly & 100% Recyclable: Fully recyclable, contributing to sustainable building practices and reducing environmental impact.",
-      "Temperature Stability: Performs efficiently in environments ranging from -40°C to +70°C, offering stability and durability.",
+      "Temperature Stability: Performs efficiently in environments ranging from -20°C to +120°C, offering stability and durability.",
       "Co-Extrusion Flexibility: Can be co-extruded with different TPE materials to meet specific application requirements.",
       "Clean & Non-Staining: No oil bleeding or staining, ensuring clean installation and easy maintenance.",
       "High Resistance to Permanent Deformation: Maintains integrity over time, preventing leaks and ensuring long-term reliability.",
@@ -126,6 +141,8 @@ export const products = [
   {
     id: 4,
     name: "Cover Gaskets & Seals",
+    image:e,
+    bannerImage:e,
     description:
       "Himalaya Plast offers high-quality Cover Gaskets & Seals designed to provide reliable protection for various containers and equipment. These gaskets prevent external elements such as rain, dust, mud, and chemicals from entering sensitive areas, ensuring the safety and integrity of stored products. Our TPE-based Cover Gaskets are engineered for durability and superior performance, making them the perfect choice for a wide range of industrial and commercial applications.",
     features: [
@@ -159,6 +176,8 @@ export const products = [
   {
     id: 5,
     name: "Luggage Seals & Gaskets",
+    image:g,
+    bannerImage:g,
     description:
       "When it comes to traveling, safety, comfort, and durability are paramount, and the right luggage plays a significant role in this. Manufacturers of high-quality luggage focus not only on maximizing interior space but also on providing superior protection for the belongings inside. At Himalaya Plast, we specialize in producing TPE-based luggage seals and gaskets, designed to meet the highest standards of impermeability, durability, and comfort.",
     features: [
@@ -183,6 +202,8 @@ export const products = [
   {
     id: 6,
     name: "Slim Partition Profiles and Gaskets",
+    image:d,
+    bannerImage:d,
     description:
       "In modern architectural design, the demand for sleek, efficient, and adaptable partition systems is ever-growing. Himalaya Plast addresses this need by offering TPE-based slim partition profiles and gaskets that combine functionality with aesthetic appeal.",
     features: [
@@ -207,6 +228,8 @@ export const products = [
   {
     id: 7,
     name: "Partition Profiles and Gaskets",
+    image: c,
+    bannerImage:c,
     description:
       "Partition systems are essential for creating functional, versatile, and aesthetically pleasing interior spaces. To ensure durability, noise reduction, and seamless integration, high-quality gaskets play a critical role in partition systems.",
     features: [
@@ -235,6 +258,8 @@ export const products = [
   {
     id: 8,
     name: "System Window Gaskets",
+    image: h,
+    bannerImage:h,
     description:
       "System windows are integral to modern architectural designs, offering advanced functionality, energy efficiency, and aesthetic appeal. To enhance their performance and durability, premium-quality gaskets play a vital role by ensuring airtight sealing, noise reduction, and thermal insulation.",
     features: [
@@ -263,6 +288,8 @@ export const products = [
   {
     id: 9,
     name: "Electric Panel Gaskets",
+    image:i,
+    bannerImage:i,
     description:
       "Electric panels are critical components in managing and protecting electrical systems, requiring robust sealing solutions to ensure their reliability and safety. Electric panel gaskets serve as essential barriers, preventing dust, moisture, and other external elements from compromising the functionality of panels used in industries, residential complexes, and commercial setups.",
     features: [

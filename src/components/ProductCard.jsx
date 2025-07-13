@@ -1,8 +1,8 @@
 import { useParams, Link } from "react-router-dom";
-import { products } from "../assets/assets.js"
+import { Carousel } from "antd";
+import { products } from "../assets/assets.js";
 
 const ProductCard = () => {
-
   const { id } = useParams();
   const product = products.find((item) => item.id === parseInt(id));
 
@@ -17,23 +17,40 @@ const ProductCard = () => {
     );
   }
 
+  const carouselImages = [
+    ...Object.values(product.bannerImage || {}), 
+    product.image, 
+  ];
+
   return (
     <div className="bg-teal-50 px-4">
-      <div className="max-w-6xl mx-auto pt-20 md:pt-32 bg-teal-50 rounded-lg p-6">
-        {/* Product Name */}
+      <div className="max-w-5xl mx-auto pt-20 md:pt-32 bg-teal-50 rounded-lg p-6">
         <h1 className="text-3xl md:text-5xl text-center font-bold mb-6 text-teal-800 pb-4">
-          {product.name}
+          {product?.name || "Product Name"}
         </h1>
 
-        {/* Product Image */}
-        <img
-          src={product?.image || "https://via.placeholder.com/600x400"}
-          alt={product.name}
-          className="w-full max-w-4xl mx-auto h-[20rem] md:h-[35rem] object-cover rounded-xl mb-8"
-        />
+        {carouselImages.length > 0 ? (
+          <div className="flex items-center justify-center mb-16">
+            <Carousel autoplay autoplaySpeed={2500} className="w-full max-w-3xl">
+              {carouselImages.map((image, index) => (
+                <div key={index} className="flex justify-center items-center">
+                  <img
+                    src={image}
+                    alt={`Product Image ${index + 1}`}
+                    className="object-cover h-[30rem] w-full rounded-md shadow-md"
+                  />
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        ) : (
+          <p className="text-center text-teal-700">No images available</p>
+        )}
 
         {/* Product Description */}
-        <p className="mt-4 text-base md:text-lg text-center text-teal-700 leading-7">{product.description}</p>
+        <p className="mt-4 text-base md:text-lg text-center text-teal-700 leading-7">
+          {product?.description || "No description available"}
+        </p>
 
         {/* Features */}
         <div className="mt-12">
@@ -71,7 +88,6 @@ const ProductCard = () => {
           </ul>
         </div>
 
-        {/* Back to Products Link */}
         <div className="flex justify-center items-center">
           <Link
             to="/products"

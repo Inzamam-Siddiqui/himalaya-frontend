@@ -39,13 +39,14 @@ const AboutSection = () => {
             value both quality and responsibility.
           </p>
           <div className="flex gap-4 pt-4">
-            <img
+            {/* <img
               src="https://via.placeholder.com/100"
               alt="Signature"
               className="object-cover"
-            />
-            <h1 className="pt-10">Gulam Kibria Siddiqui <br/>- Founder & CEO</h1>
-            
+            /> */}
+            <h1 className="pt-10">
+              Gulam Kibria Siddiqui <br />- Founder & CEO
+            </h1>
           </div>
         </div>
 
@@ -59,11 +60,13 @@ const AboutSection = () => {
             <div>
               <FaHandshake className="w-24 h-24 text-teal-100" />
             </div>
-            <h2 className="text-xl font-bold mb-2">Fair Prices</h2>
+            <h2 className="text-xl font-bold mb-2">
+              Crafted for You, Backed by Commitment
+            </h2>
             <p className="">
-              The prices offered by us are not fixed and vary based on your
-              needs and the services provided, so that we can meet the needs of
-              many customers.
+              Each product we create is tailored to your needs, designed with
+              intention and delivered with care. We don’t just aim to meet
+              expectations—we strive to exceed them, every single time.
             </p>
           </div>
         </div>
