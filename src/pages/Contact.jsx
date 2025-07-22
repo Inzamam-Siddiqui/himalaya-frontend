@@ -7,21 +7,37 @@ const Contact = () => {
   return (
     <div className="">
       <section className="min-h-[45rem] bg-teal-100 flex flex-col items-center justify-center space-y-6 pt-24 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-teal-900 text-center">
-          Contact Information
-        </h1>
+        <h2 className="text-4xl md:text-5xl font-bold text-teal-900 text-center">
+          We{"'"}re Here To Help!
+        </h2>
         <h2 className="text-md sm:text-lg max-w-3xl mx-auto font-normal text-center text-teal-700 pb-4">
-          Feel free to reach out to us for any inquiries, support, or exciting
-          collaboration opportunities. We{"'"}re here to help and partner with
-          you!
+          Whether you’re looking for the right gasket solution or need help with
+          a custom profile, we’re ready to assist. Reach out — and let’s build
+          something that fits.
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-6xl pt-8">
           {/* Visit Us Box */}
           <div className="bg-teal-400 text-white p-8 md:p-10 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:-translate-y-2">
             <span className="text-4xl">🌍</span>
-            <h3 className="text-lg md:text-xl font-semibold mt-4">Visit Us</h3>
+            <h3 className="text-lg md:text-xl font-semibold mt-4">Follow Us</h3>
             <div className="flex space-x-6 pt-6">
+              <a
+                href="https://www.linkedin.com/company/himalayaplast/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-800 transition"
+              >
+                <FaLinkedin className="w-8 h-8 md:w-10 md:h-10" />
+              </a>
+              <a
+                href="https://www.instagram.com/himalaya.plast?igsh=MW5rdjU0ZjcyeXNydg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-500 transition"
+              >
+                <FaInstagram className="w-8 h-8 md:w-10 md:h-10" />
+              </a>
               <a
                 href="https://www.facebook.com/share/18boex2m7K/"
                 target="_blank"
@@ -38,42 +54,47 @@ const Contact = () => {
               >
                 <FaXTwitter className="w-8 h-8 md:w-10 md:h-10" />
               </a>
-              <a
-                href="https://www.instagram.com/himalaya.plast?igsh=MW5rdjU0ZjcyeXNydg=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition"
-              >
-                <FaInstagram className="w-8 h-8 md:w-10 md:h-10" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/himalayaplast/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-800 transition"
-              >
-                <FaLinkedin className="w-8 h-8 md:w-10 md:h-10" />
-              </a>
             </div>
           </div>
 
           {/* Contact Box */}
+          {/* Contact Box */}
           <div className="bg-teal-500 text-white p-8 md:p-10 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:-translate-y-2">
             <span className="text-4xl">📧</span>
             <h3 className="text-lg md:text-xl font-semibold mt-4">Contact</h3>
-            <p className="mt-2 text-sm md:text-lg">info@himalayaplast.com</p>
-            <p className="mt-2 text-sm md:text-lg">+91 93237 00157</p>
+
+            {/* Email Link */}
+            <a
+              href="mailto:info@himalayaplast.com"
+              className="mt-2 text-sm md:text-lg hover:text-blue-300 transition"
+            >
+              info@himalayaplast.com
+            </a>
+
+            {/* Phone Link */}
+            <a
+              href="tel:+919323700157"
+              className="mt-2 text-sm md:text-lg hover:underline transition"
+            >
+              +91 93237 00157
+            </a>
           </div>
 
-          {/* Address Box */}
-          <div className="bg-teal-600 text-white p-6 md:p-8 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:-translate-y-2">
-            <span className="text-4xl">📍</span>
-            <h3 className="text-lg md:text-xl font-semibold mt-4">Address</h3>
-            <p className="mt-2 text-sm md:text-lg">
-              Gala No.5, Stainley Compound, Behind Bismillah Hotel, Khairani
-              Road, Sakinaka, Andheri East, Mumbai, Maharashtra, 400072.
-            </p>
-          </div>
+          <a
+            href="https://www.google.com/maps/place/Himalaya+Plast/@19.1074498,72.8922616,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="bg-teal-600 text-white p-6 md:p-8 rounded-xl shadow-lg text-center flex flex-col items-center transform transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+              <span className="text-4xl">📍</span>
+              <h3 className="text-lg md:text-xl font-semibold mt-4">Address</h3>
+              <p className="mt-2 text-sm md:text-lg">
+                5, Stainley Compound, Behind Bismillah Hotel, Khairani Road,
+                Sakinaka, Andheri East, Mumbai, Maharashtra, 400072.
+              </p>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -82,14 +103,17 @@ const Contact = () => {
         <ContactForm />
       </section>
 
-      <section className="bg-teal-100 py-16 px-8">
+      <section className="bg-teal-100 py-16 px-8 ">
         {/* Section Title */}
         <h2 className="text-4xl text-teal-800 font-bold text-center mb-4">
           {" "}
           Business Hours
         </h2>
-        <p className="text-2xl text-teal-500 text-center mb-6">
-          Our schedule ensures smooth operations throughout the day.
+        <p className="text-2xl mx-auto max-w-5xl text-teal-500 mb-6 text-center">
+          Our support doesn’t end at the website — it starts here. Whether it’s
+          a profile-matched gasket, technical advice, or trial sample, our team
+          is available throughout the week to assist you with speed and
+          precision.
         </p>
         {/* Timings Table */}
         <div className="max-w-2xl mx-auto bg-gray-50 shadow-md rounded-lg p-6">
@@ -100,18 +124,13 @@ const Contact = () => {
                   Day
                 </th>
                 <th className="border-b py-2 text-lg font-medium text-gray-600">
-                  Timing
+                  Timing (IST)
                 </th>
               </tr>
             </thead>
             <tbody>
               {[
-                { day: "Monday", timing: "10:00 AM - 6:00 PM" },
-                { day: "Tuesday", timing: "10:00 AM - 6:00 PM" },
-                { day: "Wednesday", timing: "10:00 AM - 6:00 PM" },
-                { day: "Thursday", timing: "10:00 AM - 6:00 PM" },
-                { day: "Friday", timing: "10:00 AM - 6:00 PM" },
-                { day: "Saturday", timing: "10:00 AM - 6:00 PM" },
+                { day: "Monday - Saturday", timing: "10:00 AM - 6:00 PM" },
                 { day: "Sunday", timing: "Closed" },
               ].map((slot, index) => (
                 <tr key={index} className="hover:bg-teal-400">
@@ -128,28 +147,22 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-20 text-center">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-          Thank You for Visiting!
+      <section className="bg-teal-100 pb-16 px-4 text-center">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-teal-900 mb-4">
+          Thank You for Visiting Himalaya Plast!
         </h2>
-        <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-6">
-          We appreciate you taking the time to explore our website. We hope you
-          found everything you were looking for. If you have any questions or
-          need assistance, feel free to get in touch. We look forward to
-          connecting with you again soon. Have an amazing day ahead!
-        </p>
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-10">
           <a
             href="/"
-            className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
+            className="bg-teal-600 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-700 transition"
           >
             Back to Home
           </a>
           <a
             href="mailto:info@himalayaplast.com"
-            className="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700 transition"
+            className="bg-teal-600 text-white px-6 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-700 transition"
           >
-            Send  Message
+            Send Message
           </a>
         </div>
       </section>

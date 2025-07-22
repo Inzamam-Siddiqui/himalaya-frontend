@@ -2,9 +2,17 @@ import CustomCarousel from "../components/CustomCarousel";
 import { Link } from "react-router-dom";
 import AboutSection from "../components/AboutSection";
 import KeyProducts from "../components/KeyProducts";
-import { FaRecycle, FaHandshake, FaLeaf } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import tpe1 from "../assets/products/tpe1.jpg";
+import {
+  FaLeaf,
+  FaRecycle,
+  FaStar,
+  FaHandshake,
+  FaDraftingCompass,
+  FaRocket,
+  FaGlobe,
+  FaShieldAlt,
+} from "react-icons/fa";
+import tpe from "../assets/products/tpe.jpg";
 import tpe2 from "../assets/products/tpe2.png";
 const Home = () => {
   return (
@@ -16,10 +24,12 @@ const Home = () => {
       <KeyProducts />
 
       <section className="bg-teal-100 py-20">
-        <h1 className="text-4xl font-bold text-center text-teal-800 mb-8">
+        <h2 className="text-4xl font-bold text-center text-teal-800 mb-8 px-4">
           Thermoplastic Elastomers (TPE)
-        </h1>
-        <div className="grid grid-cols-4 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-[30rem] p-4 gap-4">
+        </h2>
+
+        {/* First Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-2 mx-auto max-w-7xl bg-teal-500 h-auto md:h-[30rem] p-4 gap-4 px-4 sm:px-6">
           <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
             <h2 className="text-xl font-bold text-teal-800">
               About TPE — Thermoplastic Elastomers (TPE)
@@ -35,7 +45,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="col-span-3 row-span-1 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+          <div className="col-span-1 sm:col-span-1 md:col-span-3 row-span-1 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
             <h2 className="text-xl font-bold text-teal-800">Why Choose TPE?</h2>
             <p className="text-teal-700 mt-2">
               TPEs offer the perfect balance between performance and
@@ -60,7 +70,7 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+          <div className="col-span-1 sm:col-span-2 md:col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
             <h2 className="text-xl font-bold text-teal-800">
               Advantages of Choosing Himalaya Plast{"'"}s TPE
             </h2>
@@ -80,17 +90,21 @@ const Home = () => {
           </div>
 
           <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl">
-            <img src={tpe1} className="object-cover" />
+            <img src={tpe} className="w-full h-full object-cover" alt="TPE 1" />
           </div>
         </div>
 
-        <div className="grid grid-cols-3 grid-rows-2 mx-auto max-w-7xl bg-teal-500  px-4 pb-4 gap-4">
+        {/* Second Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 mx-auto max-w-7xl bg-teal-500 px-4 sm:px-6 pb-4 gap-4">
           <div className="col-span-1 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl">
-            <img src={tpe2} alt="" />
+            <img
+              src={tpe2}
+              alt="TPE 2"
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          {/* Right-side content */}
-          <div className="col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
+          <div className="col-span-1 sm:col-span-1 md:col-span-2 row-span-2 bg-teal-200 relative rounded-lg overflow-hidden shadow-xl p-4">
             <h2 className="text-xl font-bold text-teal-800">
               Applications of TPE
             </h2>
@@ -106,9 +120,9 @@ const Home = () => {
       </section>
 
       <section className="h-auto bg-gray-100 py-16 px-4">
-        <h1 className="text-4xl font-bold text-center text-teal-800 mb-2">
+        <h2 className="text-4xl font-bold text-center text-teal-800 mb-2">
           Industries We Serve
-        </h1>
+        </h2>
         <h2 className="text-lg max-w-3xl mx-auto font-semibold text-center text-teal-500 mb-6">
           Himalaya Plast’s versatile gaskets are designed for various
           industries, offering high-performance sealing solutions
@@ -117,7 +131,7 @@ const Home = () => {
         <div className="my-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">01</h1>
+            <h2 className="text-8xl text-gray-200">01</h2>
             <h4 className="text-2xl font-semibold text-white">Automobile</h4>
             <p className="text-white mt-2">
               Reliable TPE solutions built for automotive strength, flexibility,
@@ -126,7 +140,7 @@ const Home = () => {
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">02</h1>
+            <h2 className="text-8xl text-gray-200">02</h2>
             <h4 className="text-2xl font-semibold text-white">
               Industrial Applications
             </h4>
@@ -137,7 +151,7 @@ const Home = () => {
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">03</h1>
+            <h2 className="text-8xl text-gray-200">03</h2>
             <h4 className="text-2xl font-semibold text-white">
               Construction & Architecture
             </h4>
@@ -148,7 +162,7 @@ const Home = () => {
           </div>
           <div className="bg-gradient-to-bl from-teal-500 via-teal-600 via-60% h-[22rem] rounded-xl p-3">
             <img src="" alt=""></img>
-            <h1 className="text-8xl text-gray-200">04</h1>
+            <h2 className="text-8xl text-gray-200">04</h2>
             <h4 className="text-2xl font-semibold text-white">
               Custom Projects
             </h4>
@@ -162,43 +176,125 @@ const Home = () => {
 
       <section className="py-16 px-4 bg-teal-100">
         <div className="p-5 mx-auto max-w-7xl">
-          <h1 className="text-4xl text-teal-800 mb-2 font-bold">
-            Why Choose Us ?
-          </h1>
-          <p className="text-xl mb-4">
+          <h2 className="text-4xl text-teal-800 mb-4 font-bold">
+            Why Choose Us?
+          </h2>
+          <p className="text-xl mb-6">
             At Himalaya Plast, we don{"'"}t just manufacture gaskets, we
             engineer comprehensive sealing solutions.
           </p>
 
-          <ul className="p-6 space-y-4">
-            <li className="flex items-center space-x-3">
-              <FaLeaf className="text-green-700" />
-              <span>
-                <strong>Eco-Friendly Innovation:</strong> TPE is 100%
-                recyclable, hence reduces environmental impact.
-              </span>
+          <ul className="space-y-6">
+            {/* Item 1 */}
+            <li className="flex items-start gap-3">
+              <FaLeaf className="text-green-700 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Eco-Friendly Innovation
+                </h3>
+                <p className="text-teal-700">
+                  TPE is 100% recyclable, hence reduces environmental impact.
+                </p>
+              </div>
             </li>
-            <li className="flex items-center space-x-3 ">
-              <FaRecycle className="text-blue-700" />
-              <span>
-                <strong>Zero-Waste Manufacturing:</strong> Recycling every bit
-                of material, ensuring a circular production process.
-              </span>
+
+            {/* Item 2 */}
+            <li className="flex items-start gap-3">
+              <FaRecycle className="text-blue-700 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Zero-Waste Manufacturing
+                </h3>
+                <p className="text-teal-700">
+                  Recycling every bit of material, ensuring a circular
+                  production process.
+                </p>
+              </div>
             </li>
-            <li className="flex items-center space-x-3">
-              <FaStar className="text-yellow-300" />
-              <span>
-                <strong>Certified Excellence:</strong> ISO-certified and
-                RoHS-compliant — our products meet global benchmarks for
-                quality, safety, and environmental responsibility.
-              </span>
+
+            {/* Item 3 */}
+            <li className="flex items-start gap-3">
+              <FaStar className="text-yellow-400 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Certified Excellence
+                </h3>
+                <p className="text-teal-700">
+                  ISO-certified and RoHS-compliant — our products meet global
+                  benchmarks for quality, safety, and environmental
+                  responsibility.
+                </p>
+              </div>
             </li>
-            <li className="flex items-center space-x-3 ">
-              <FaHandshake className="text-pink-700" />
-              <span>
-                <strong>Customer-Centric Approach:</strong> Collaboration with
-                clients to develop solutions tailored to specific needs.
-              </span>
+
+            {/* Item 4 */}
+            <li className="flex items-start gap-3">
+              <FaHandshake className="text-pink-700 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Customer-Centric Approach
+                </h3>
+                <p className="text-teal-700">
+                  Collaboration with clients to develop solutions tailored to
+                  specific needs.
+                </p>
+              </div>
+            </li>
+
+            {/* Item 5 */}
+            <li className="flex items-start gap-3">
+              <FaDraftingCompass className="text-indigo-600 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Precision Engineering
+                </h3>
+                <p className="text-teal-700">
+                  Advanced tooling and tight tolerances ensure reliable,
+                  leak-proof performance every time.
+                </p>
+              </div>
+            </li>
+
+            {/* Item 6 */}
+            <li className="flex items-start gap-3">
+              <FaRocket className="text-red-600 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Rapid Prototyping
+                </h3>
+                <p className="text-teal-700">
+                  Quick turnaround on new designs using modern prototyping
+                  methods to speed up your development cycle.
+                </p>
+              </div>
+            </li>
+
+            {/* Item 7 */}
+            <li className="flex items-start gap-3">
+              <FaGlobe className="text-blue-600 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Global Reach
+                </h3>
+                <p className="text-teal-700">
+                  Serving clients worldwide with scalable solutions and timely
+                  delivery across continents.
+                </p>
+              </div>
+            </li>
+
+            {/* Item 8 */}
+            <li className="flex items-start gap-3">
+              <FaShieldAlt className="text-gray-700 w-6 h-6 mt-1" />
+              <div>
+                <h3 className="font-bold text-base text-teal-800">
+                  Durability Guaranteed
+                </h3>
+                <p className="text-teal-700">
+                  Built to withstand extreme temperatures, pressure, and wear —
+                  our gaskets are made to last.
+                </p>
+              </div>
             </li>
           </ul>
         </div>

@@ -41,9 +41,13 @@ const ContactForm = () => {
       onSubmit={onSubmit}
       className="max-w-2xl p-8 bg-white border border-gray-100 rounded-lg shadow-lg"
     >
-      <h2 className="text-3xl font-semibold text-gray-800 text-center mb-6">
+      <h2 className="text-3xl font-semibold text-gray-800 text-center">
         Contact Us
       </h2>
+      <p className="text-md text-gray-800 my-4 text-center">
+        Fill out the form below and our team will get back to you within 24
+        hours.
+      </p>
 
       <div className="space-y-4">
         <div>
@@ -118,7 +122,7 @@ const ContactForm = () => {
         type="submit"
         className="w-full mt-6 py-3 bg-teal-500 text-white font-semibold rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
       >
-        Submit
+        Send Inquiry
       </button>
 
       {statusMessage && (

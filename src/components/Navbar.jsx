@@ -94,7 +94,6 @@ const Navbar = () => {
         </NavLink>
       </ul>
 
-      {/* Desktop Contact Button - Hidden on Medium & Small Screens */}
       <div className="hidden lg:block">
         <Link to="/contact">
           <button className="text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-sm px-5 py-2.5 text-center">
@@ -119,7 +118,7 @@ const Navbar = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h26M4 12h26M4 18h26"}
           />
         </svg>
       </button>

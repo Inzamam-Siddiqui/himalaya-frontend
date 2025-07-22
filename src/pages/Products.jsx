@@ -1,14 +1,39 @@
 import { Link } from "react-router-dom";
 import { products } from "../assets/assets.js";
-import j from "../assets/products/I_02.jpg"
+import j from "../assets/products/I_02.jpg";
+import { ProductBanner } from "../components/ProductBanner.jsx";
+import GasketProcessTimeline from "../components/Timeline.jsx"
+
+import a from "../assets/productsBanner/A.png";
+import b from "../assets/productsBanner/B.png";
+import c from "../assets/productsBanner/C.png";
+import d from "../assets/productsBanner/D.png";
+import e from "../assets/productsBanner/E.png";
+import f from "../assets/productsBanner/F.png";
+import g from "../assets/productsBanner/G.png";
+import h from "../assets/productsBanner/H.png";
+import i1 from "../assets/productsBanner/I_01.png";
+// import i2 from "../assets/productsBanner/I_02.png";
+
+const productBannerImages = [a, b, c, d, e, f, g, h, i1];
 
 const Products = () => {
   return (
-    <div className="px-16 pt-40 pb-16 bg-teal-50 ">
+    <>
+    <div className="pt-24 bg-teal-50">
+    <div className="mb-12">
+          <ProductBanner
+            items={productBannerImages}
+            direction="right"
+            speed="normal"
+            pauseOnHover={true}
+            className="bg-teal-100"
+          />
+        </div>
       <div className="text-center">
-        <h1 className="text-5xl text-teal-900 font-extrabold mb-8">
+        <h2 className="text-5xl text-teal-900 font-extrabold mb-8">
           Our Products
-        </h1>
+        </h2>
         <p className="text-lg text-teal-700 max-w-3xl mx-auto">
           Explore our wide range of eco-friendly and innovative products,
           designed to meet your needs while contributing to a sustainable
@@ -67,21 +92,34 @@ const Products = () => {
           </Link>
         </div>
 
-        {/* Left Side Image - Hidden on Small Screens */}
-        <img
-          src={products[9].image} // Adjust as needed
-          alt="Left Image"
-          className="hidden lg:flex absolute top-1/2 left-[-20rem] w-64 h-64 object-cover opacity-0 transform -translate-y-1/2 scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-300"
-        />
+        {/* Left Text Block */}
+        <div className="hidden lg:flex absolute top-1/2 left-[-20rem] w-64 text-left opacity-0 transform -translate-y-1/2 scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-300 flex-col">
+          <h3 className="text-xl font-bold mb-2">
+            🛠️ Custom Fit for Your Profile
+          </h3>
+          <p className="text-sm">
+            Design your gasket around your profile — shape, size, and locking
+            dimensions — all built to spec. We trial, test, and deliver the
+            perfect-fit seal for your system.
+          </p>
+        </div>
 
-        {/* Right Side Image - Hidden on Small Screens */}
-        <img
-          src={products[9].image} // Adjust as needed
-          alt="Right Image"
-          className="hidden lg:flex absolute top-1/2 right-[-20rem] w-64 h-64 object-cover opacity-0 transform -translate-y-1/2 scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-300"
-        />
+        {/* Right Text Block */}
+        <div className="hidden lg:flex absolute top-1/2 right-[-20rem] w-64 text-left opacity-0 transform -translate-y-1/2 scale-90 group-hover:opacity-100 group-hover:scale-100 transition duration-300 flex-col">
+          <h3 className="text-xl font-bold mb-2">
+            🎨 Color-Matched to Perfection
+          </h3>
+          <p className="text-sm">
+            Choose from standard colors or match your gasket to your
+            window/profile finish. We offer custom color extrusion to blend
+            seamlessly into your design.
+          </p>
+        </div>
       </div>
+  <GasketProcessTimeline/>
     </div>
+
+    </>
   );
 };
 

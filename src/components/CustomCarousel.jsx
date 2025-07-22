@@ -3,23 +3,27 @@ import image1 from "../assets/bgimages/image3.jpg";
 import image2 from "../assets/bgimages/image1.jpg";
 import image3 from "../assets/bgimages/image5.jpg";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CustomCarousel = () => {
   const slides = [
     {
       image: image1,
       text: "Precision-Engineered UPVC Gaskets",
-      description: "Crafting high-quality sealing solutions for diverse industries with innovation and precision.",
+      description:
+        "Crafting high-quality sealing solutions for diverse industries with innovation and precision.",
     },
     {
       image: image2,
       text: "Sustainability Meets Performance",
-      description: "Our gaskets ensure superior performance while contributing to environmental responsibility.",
+      description:
+        "Our gaskets ensure superior performance while contributing to environmental responsibility.",
     },
     {
       image: image3,
       text: "Your Trusted Manufacturing Partner",
-      description: "Delivering reliability, innovation, and excellence in gasket manufacturing since our inception.",
+      description:
+        "Delivering reliability, innovation, and excellence in gasket manufacturing since our inception.",
     },
   ];
 
@@ -51,8 +55,15 @@ const CustomCarousel = () => {
             />
             {/* Text Overlay */}
             <div className="absolute inset-0 pt-[47vh] pl-[20vh] items-center justify-center bg-black bg-opacity-40">
-              <h2 className="text-white p-2 rounded-md  text-4xl font-bold">{slide.text}</h2>
-              <p className="text-white p-2 rounded-md  text-xl font-medium">{slide.description}</p>
+              <h2 className="text-white p-2 rounded-md  text-4xl font-bold">
+                {slide.text}
+              </h2>
+              <p className="text-white p-2 rounded-md  text-xl font-medium">
+                {slide.description}
+              </p>
+              <button className="text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-sm px-5 py-2.5 text-center mt-2">
+                <Link to="/contact">Contact Us</Link>
+              </button>
             </div>
           </div>
         ))}

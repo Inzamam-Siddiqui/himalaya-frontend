@@ -1,8 +1,9 @@
 import image7 from "../assets/bgimages/image7.jpg";
 import { FaHandshake } from "react-icons/fa";
 
+
 const AboutSection = () => {
-  const shopOpenedYear = 2000; // Replace with the year your shop opened
+  const shopOpenedYear = 2000; 
   const currentYear = new Date().getFullYear();
   const shopAge = currentYear - shopOpenedYear;
 
@@ -22,7 +23,7 @@ const AboutSection = () => {
 
         {/* Card 2 */}
         <div className=" p-3">
-          <h1 className="text-xl text-teal-800 font-semibold mb-1">About Us</h1>
+          <h2 className="text-xl text-teal-800 font-semibold mb-1">About Us</h2>
           <h2 className="mb-5 text-2xl text-teal-500  font-bold">
             Your Trusted Partner for Extrusion Products!
           </h2>
@@ -44,30 +45,37 @@ const AboutSection = () => {
               alt="Signature"
               className="object-cover"
             /> */}
-            <h1 className="pt-10">
+            <h2 className="pt-10">
               Gulam Kibria Siddiqui <br />- Founder & CEO
-            </h1>
+            </h2>
           </div>
         </div>
 
-        {/* Card 3 */}
-        <div className=" pt-20 p-3">
-          <h1 className="text-9xl font-semibold text-gray-800">{shopAge}</h1>
+        <div className="pt-20 p-3">
+          <h2 className="text-9xl font-semibold text-gray-800">{shopAge}</h2>
           <h3 className="text-xl font-bold mb-10">
             Years of experience resulting from continuous useful work.
           </h3>
-          <div className="rounded-lg bg-teal-400 p-4 shadow-xl h-[24rem]">
+
+          <div className="relative rounded-lg bg-teal-400 p-4 shadow-xl h-[24rem]">
             <div>
               <FaHandshake className="w-24 h-24 text-teal-100" />
             </div>
             <h2 className="text-xl font-bold mb-2">
               Crafted for You, Backed by Commitment
             </h2>
-            <p className="">
+            <p>
               Each product we create is tailored to your needs, designed with
               intention and delivered with care. We don’t just aim to meet
               expectations—we strive to exceed them, every single time.
             </p>
+
+            {/* Contact Button */}
+            <div className="absolute -bottom-3 -right-6">
+              <button className="px-4 py-2 bg-teal-800 text-white rounded hover:bg-teal-900 transition">
+                Contact
+              </button>
+            </div>
           </div>
         </div>
       </div>

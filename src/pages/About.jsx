@@ -1,62 +1,114 @@
 import Mission from "../components/Mission";
 import tiger from "../assets/logos/India.png";
-// import image3 from "../assets/bgimages/image3.jpg";
-import globe from "../assets/bgimages/global.mov";
+import globe from "../assets/bgimages/global.mp4";
 import { InfiniteMovingCards } from "../components/MovingCards";
+import TextType from "../components/TextType";
+// import map from "../assets/bgimages/map.jpg"
+import { FiTarget } from "react-icons/fi";
+import { BiSupport } from "react-icons/bi";
+import { MdBuild } from "react-icons/md";
+import { FaHandshake } from "react-icons/fa";
 
 const About = () => {
   return (
     <div className="">
-      <section className="h-auto pt-40 pb-10 px-4 bg-teal-100">
-        <div className="max-w-6xl mx-auto  text-center">
-          <h1 className="text-5xl text-center font-bold text-teal-800 mb-6">
-            Our Journey
-          </h1>
-          <p className=" text-start text-gray-700 leading-relaxed">
-            From humble beginnings to industry leadership, Himalaya Plast has
-            continually evolved to meet the needs of modern industries:
+      <section className="h-auto pt-24 pb-20 bg-teal-100">
+        <div className="h-[12rem] bg-teal-200 mb-12 flex justify-evenly items-center">
+          <TextType
+            text={[
+              "A legacy of  years",
+              "Custom-engineered gaskets",
+              "Made in India",
+            ]}
+            typingSpeed={95}
+            pauseDuration={1500}
+            showCursor={false}
+            cursorCharacter=""
+          />
+          <div>
+            <img
+              src={tiger}
+              alt="Himalaya Plast Logo"
+              className="w-40 h-auto rounded-lg"
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl text-center font-bold text-teal-800 mb-6">
+            About Himalaya Plast
+          </h2>
+          <p className="text-start text-gray-700 leading-relaxed px-2 sm:px-0">
+            Himalaya Plast is a specialist manufacturer of custom-engineered
+            gaskets designed for uPVC and aluminium profiles. From TPE, TPV, and
+            TPO-based co-extrusion to trial-fitted profile matching, our
+            products are built to lock in cleanly, seal effectively, and perform
+            long-term in architectural applications. We don’t sell from a
+            catalogue — we engineer gaskets to fit your profile exactly.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto mt-10 space-y-8">
-          <div className="flex items-start space-x-4">
+
+        <div className="max-w-6xl mx-auto mt-10 space-y-8 px-2 sm:px-0">
+          {/* Item 1 */}
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
               <span className="font-bold text-teal-800">1</span>
             </div>
             <p className="text-gray-700">
               <strong>Innovation at the Core:</strong> Early adoption of
               thermoplastic elastomers (TPE) revolutionized our manufacturing
-              processes, thus it helps in 100% recyclability and sustainability.
+              processes, enabling 100% recyclability and sustainable practices.
             </p>
           </div>
-          <div className="flex items-start space-x-4">
+
+          {/* Item 2 */}
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
               <span className="font-bold text-teal-800">2</span>
             </div>
             <p className="text-gray-700">
-              <strong>Certifications that Inspire Confidence:</strong> We operate under
-              <strong> ISO 9001, 14001, 45001</strong>, and <strong> 50001</strong>  standards, with all
-              products RoHS compliant — aligning our operations with global
-              benchmarks in quality, safety, sustainability, and compliance.
+              <strong>Certifications that Inspire Confidence:</strong> We
+              operate under <strong>ISO 9001, 14001, 45001</strong>, and{" "}
+              <strong>50001</strong> standards, with all products RoHS compliant
+              — aligning operations with global benchmarks for quality, safety,
+              sustainability, and compliance.
             </p>
           </div>
-          <div className="flex items-start space-x-4">
+
+          {/* Item 3 */}
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
               <span className="font-bold text-teal-800">3</span>
             </div>
             <p className="text-gray-700">
-              <strong>Technological Excellence:</strong> Integrated advanced
-              co-extrusion technologies to deliver custom solutions tailored to
-              diverse applications.
+              <strong>Technological Excellence:</strong> We’ve integrated
+              advanced co-extrusion technology and material sciences to deliver
+              custom-fit solutions for complex architectural needs.
             </p>
           </div>
-          <div className="flex items-start space-x-4">
+
+          {/* Item 4 */}
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
               <span className="font-bold text-teal-800">4</span>
             </div>
             <p className="text-gray-700">
-              <strong>A Testament to Growth:</strong> Today, Himalaya Plast
-              stands as a beacon of continuous improvement and sustainable
+              <strong>A Testament to Growth:</strong> From humble beginnings to
+              a state-of-the-art facility, Himalaya Plast continues to expand
+              its capabilities through continuous improvement and sustainable
               growth.
+            </p>
+          </div>
+
+          {/* Item 5 */}
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
+              <span className="font-bold text-teal-800">5</span>
+            </div>
+            <p className="text-gray-700">
+              <strong>Profile-Matched Perfection:</strong> Each gasket is
+              designed to match specific uPVC and aluminium profiles — ensuring
+              a seamless fit, leak prevention, and long-term structural
+              reliability.
             </p>
           </div>
         </div>
@@ -64,19 +116,32 @@ const About = () => {
 
       <Mission />
 
-      <section
-        className="h-[40rem] flex flex-col justify-center items-center text-center p-8 bg-cover bg-center bg-no-repeat opacity-90"
-        style={{ backgroundImage: `url(${globe})` }}
-      >
-        <h2 className="text-4xl font-semibold text-white mb-4">
-          Global Reach & Partnerships
-        </h2>
-        <p className="text-lg mx-auto max-w-4xl text-gray-300 mb-6">
-          We are proud to have established strong partnerships around the world,
-          extending our influence and impact in diverse markets. Our global
-          network allows us to serve our clients with unmatched expertise and
-          support.
-        </p>
+      <section className="relative h-[40rem] overflow-hidden text-center flex items-center justify-center">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source
+            src={globe}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative z-10 text-white px-4">
+          <h2 className="text-4xl font-semibold mb-4">
+            Global Reach & Partnerships
+          </h2>
+          <p className="text-lg max-w-4xl mx-auto text-gray-300">
+            We are proud to have established strong partnerships around the
+            world, extending our influence and impact in diverse markets. Our
+            global network allows us to serve our clients with unmatched
+            expertise and support.
+          </p>
+        </div>
       </section>
 
       <section className="bg-teal-50 py-20 px-4">
@@ -92,7 +157,7 @@ const About = () => {
             items={[
               {
                 name: "Recognized at Leading Industry Events",
-                title: "Delhi (2021) | Mumbai (2022 & 2023)",
+                title: "Delhi (2021) | Mumbai (2022, 2023 & 2025)",
                 quote:
                   "Proud participants in prestigious global exhibitions such as ZAK World of Façades, showcasing the versatility and quality of our TPE solutions.",
                 tagline: "Showcasing Excellence, One Event at a Time.",
@@ -150,7 +215,7 @@ const About = () => {
               },
               {
                 name: "Globally Recognized Certifications & Standards",
-                title: "ISO, RoHS, VU",
+                title: "ISO, RoHS, UV",
                 quote:
                   "Certified for global quality and safety standards, delivering dependable excellence.",
                 tagline: "Certified Quality, Trusted Worldwide.",
@@ -185,53 +250,58 @@ const About = () => {
         </div>
       </section>
 
-      <section className="h-auto bg-gradient-to-r from-teal-400 to-teal-600 text-white px-4 py-24">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Certifications and Achievements
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-teal-800 mb-10">
+            What You Can Expect from Himalaya Plast
           </h2>
-          <p className="text-lg md:text-xl mb-12">
-            A testament to our dedication to quality, sustainability, and
-            innovation.
-          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* First Achievement */}
-            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800">
-              <h3 className="text-2xl font-semibold mb-4">
-                1️⃣ Recognized at Leading Industry Events
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Precision, Always */}
+            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800 transition-transform duration-300 hover:-translate-y-2">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                <FiTarget className="text-teal-700 text-3xl" />
+                Precision, Always
               </h3>
-              <p className="text-gray-700 mb-4">
-                📍 Delhi (2021) | Mumbai (2022) | Mumbai (2023)
-              </p>
               <p className="text-gray-700">
-                🏆 Proud participants in prestigious global exhibitions such as
-                ZAK World of Façades, showcasing the versatility and quality of
-                our TPE solutions.
+                Every gasket is engineered to lock in cleanly and fit like it
+                was made just for your profile — because it is.
               </p>
             </div>
 
-            {/* Second Achievement */}
-            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800">
-              <h3 className="text-2xl font-semibold mb-4">
-                100% Made in India, Trusted Worldwide
+            {/* Support That Sticks */}
+            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800 transition-transform duration-300 hover:-translate-y-2">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                <BiSupport className="text-teal-700 text-3xl" />
+                Support That Sticks
               </h3>
-              <p className="text-gray-700 mb-4">
-                🌍 Delivering premium, eco-friendly TPE materials crafted in
-                India and trusted by industries around the world for their
-                durability, flexibility, and performance.
+              <p className="text-gray-700">
+                From your first inquiry to post-installation feedback, our team
+                responds fast, solves faster, and backs every product we ship.
               </p>
             </div>
 
-            {/* Third Achievement */}
-            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800">
-              <h3 className="text-2xl font-semibold mb-4">
-                Innovating the Future of Thermoplastic Elastomers
+            {/* Customization Without Complication */}
+            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800 transition-transform duration-300 hover:-translate-y-2">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                <MdBuild className="text-teal-700 text-3xl" />
+                Customization Without Complication
               </h3>
-              <p className="text-gray-700 mb-4">
-                ⚙️ Leading technological advancements in TPE, with solutions
-                that meet the evolving needs of sectors such as automotive,
-                medical, construction, and more.
+              <p className="text-gray-700">
+                Whether it’s profile fitment or color matching, we simplify the
+                custom process without compromising on performance.
+              </p>
+            </div>
+
+            {/* Integrity in Every Roll */}
+            <div className="bg-white p-6 rounded-lg shadow-xl text-teal-800 transition-transform duration-300 hover:-translate-y-2">
+              <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                <FaHandshake className="text-teal-700 text-3xl" />
+                Integrity in Every Roll
+              </h3>
+              <p className="text-gray-700">
+                We deliver what we promise — on time, on spec, and without
+                excuses.
               </p>
             </div>
           </div>
@@ -240,9 +310,9 @@ const About = () => {
 
       <section className="h-auto py-20 bg-teal-100 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-teal-800 mb-6">
+          <h2 className="text-4xl font-bold text-teal-800 mb-6">
             Proudly Made in India
-          </h1>
+          </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             Himalaya Plast takes pride in manufacturing all products in
             India.This supports sustainable local manufacturing practices. Their

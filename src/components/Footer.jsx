@@ -1,6 +1,7 @@
 import hplogo from "../assets/logos/hplogo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { products } from "../assets/assets";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <p className="text-xl font-medium mb-4">COMPANY</p>
+            <p className="text-xl font-medium mb-4">LINKS</p>
             <ul className="flex flex-col gap-2">
               <li>
                 <a href="/" className="hover:text-teal-300 transition">
@@ -47,22 +48,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources Links */}
+          {/* Dynamic Products Links */}
           <div>
-            <p className="text-xl font-medium mb-4">LINKS</p>
+            <p className="text-xl font-medium mb-4">PRODUCTS</p>
             <ul className="flex flex-col gap-2">
-              <li>
-                <a className="hover:text-teal-300 transition">Careers</a>
-              </li>
-              <li>
-                <a className="hover:text-teal-300 transition">Terms</a>
-              </li>
-              <li>
-                <a className="hover:text-teal-300 transition">Privacy</a>
-              </li>
-              <li>
-                <a className="hover:text-teal-300 transition">Cookies</a>
-              </li>
+              {products.slice(0, 4).map((product) => {
+                const nameWords = product.name.trim().split(" ");
+                const truncatedName =
+                  nameWords.length > 4
+                    ? nameWords.slice(0, 4).join(" ") + "..."
+                    : product.name;
+
+                return (
+                  <li key={product.id}>
+                    <a
+                      href={`/products/${product.id}`}
+                      className="hover:text-teal-300 transition"
+                    >
+                      {truncatedName}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
