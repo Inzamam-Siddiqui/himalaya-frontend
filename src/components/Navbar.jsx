@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-20 bg-transparent backdrop-blur-sm fixed px-6 py-4 flex justify-evenly items-center w-full z-10">
+    <div className="h-20 bg-transparent backdrop-blur-sm fixed px-6 py-4 flex justify-between items-center w-full z-10">
       <div>
         <img
           onClick={() => navigate("/")}
@@ -123,7 +123,6 @@ const Navbar = () => {
         </svg>
       </button>
 
-      {/* Mobile Menu - Visible Only on Small & Medium Screens */}
       {isMenuOpen && (
         <div className="absolute top-20 left-0 w-full bg-white shadow-lg z-10 lg:hidden">
           <ul className="flex flex-col items-start p-4 space-y-4">

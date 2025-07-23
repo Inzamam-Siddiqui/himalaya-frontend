@@ -6,7 +6,7 @@ export const ProductBanner = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className
+  className = ""
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -18,7 +18,7 @@ export const ProductBanner = ({
     }
   }, []);
 
-  function addAnimation() {
+  const addAnimation = () => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
       scrollerContent.forEach((item) => {
@@ -30,7 +30,7 @@ export const ProductBanner = ({
       getSpeed();
       setStart(true);
     }
-  }
+  };
 
   const getDirection = () => {
     containerRef.current?.style.setProperty(
@@ -50,26 +50,26 @@ export const ProductBanner = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative  mx-auto",
+        "scroller relative w-full",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-12 animate-scroll",
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-6 sm:gap-10 md:gap-12 animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
             key={`card-${idx}`}
-            className="w-[100px] md:w-[200px] shrink-0 transition hover:scale-[1.4]"
+            className="shrink-0 w-[80px] sm:w-[120px] md:w-[160px] lg:w-[200px] transition hover:scale-150"
           >
             <img
               src={item}
               alt={`banner-${idx}`}
-              className="rounded-xl object-cover w-full h-48 md:h-48"
+              className="rounded-xl object-cover w-full h-24 sm:h-32 md:h-40 lg:h-48"
             />
           </li>
         ))}

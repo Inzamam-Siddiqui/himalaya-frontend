@@ -1,9 +1,8 @@
 import image7 from "../assets/bgimages/image7.jpg";
 import { FaHandshake } from "react-icons/fa";
 
-
 const AboutSection = () => {
-  const shopOpenedYear = 2000; 
+  const shopOpenedYear = 2000;
   const currentYear = new Date().getFullYear();
   const shopAge = currentYear - shopOpenedYear;
 
@@ -31,7 +30,7 @@ const AboutSection = () => {
 
           <p className="text-gray-600">
             At Himalaya Plast, we take pride in being a leading manufacturer of
-            UPVC gaskets, delivering precision-engineered sealing solutions for
+            uPVC gaskets, delivering precision-engineered sealing solutions for
             diverse industries. Since our inception, we have consistently driven
             innovation, sustainability, and customer-centricity to set new
             benchmarks in gasket manufacturing. Our products are designed for
@@ -69,12 +68,26 @@ const AboutSection = () => {
               intention and delivered with care. We don’t just aim to meet
               expectations—we strive to exceed them, every single time.
             </p>
-
-            {/* Contact Button */}
-            <div className="absolute -bottom-3 -right-6">
-              <button className="px-4 py-2 bg-teal-800 text-white rounded hover:bg-teal-900 transition">
-                Contact
-              </button>
+            {/* Certifications Hover Box */}
+            <div className="absolute -bottom-4 right-8 group z-10">
+              <div className="bg-teal-800 text-white px-4 py-2 rounded cursor-pointer relative hover:scale-100">
+                At Himalaya Plast, quality isn’t a claim — it’s certified.
+                {/* Hover Content */}
+                <div className="absolute top-full right-0 mt-3 w-72 bg-white text-teal-900 rounded-lg shadow-lg scale-0 group-hover:scale-100 origin-top-left transition-transform duration-300 p-4 z-20">
+                  <h4 className="font-bold mb-2 text-teal-700 text-center">
+                    🏅 Certifications
+                  </h4>
+                  <ul className="text-sm list-disc list-inside space-y-1">
+                    <li>🏅 ISO 9001:2015 </li>
+                    <li>🌱 ISO 14001 </li>
+                    <li>🛡 ISO 45001</li>
+                    <li>⚡ ISO 50001</li>
+                    <li>🚫 RoHS Compliant</li>
+                    <li>☀ UV Resistant</li>
+                    <li>✅ Lead-Free</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

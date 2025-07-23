@@ -17,7 +17,7 @@ const Map = () => {
         
       </div>
       <p className="text-xl font-semibold text-gray-800 mt-4">
-      We’re based in Mumbai, but work with clients across India and abroad.      </p>
+      We’re based in Mumbai, and work with clients across India and Abroad.</p>
     </div>
   );
 };

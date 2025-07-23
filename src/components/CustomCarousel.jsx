@@ -9,7 +9,7 @@ const CustomCarousel = () => {
   const slides = [
     {
       image: image1,
-      text: "Precision-Engineered UPVC Gaskets",
+      text: "Precision-Engineered uPVC Gaskets",
       description:
         "Crafting high-quality sealing solutions for diverse industries with innovation and precision.",
     },
@@ -54,16 +54,18 @@ const CustomCarousel = () => {
               className="w-full h-full object-cover"
             />
             {/* Text Overlay */}
-            <div className="absolute inset-0 pt-[47vh] pl-[20vh] items-center justify-center bg-black bg-opacity-40">
-              <h2 className="text-white p-2 rounded-md  text-4xl font-bold">
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center px-4 md:pl-[20vh] pt-[45vh] md:pt-0">
+              <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-2">
                 {slide.text}
               </h2>
-              <p className="text-white p-2 rounded-md  text-xl font-medium">
+              <p className="text-white text-base sm:text-lg md:text-lg max-w-xl mb-4">
                 {slide.description}
               </p>
-              <button className="text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-3xl text-sm px-5 py-2.5 text-center mt-2">
-                <Link to="/contact">Contact Us</Link>
-              </button>
+              <Link to="/contact">
+                <button className="text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700 hover:bg-gradient-to-br focus:outline-none focus:ring-2 focus:ring-teal-300 font-medium rounded-3xl text-sm md:text-base px-5 py-2.5">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         ))}
@@ -72,13 +74,13 @@ const CustomCarousel = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute text-white top-1/2 left-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
+        className="absolute text-white top-1/2 left-2 md:left-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
       >
         <FaArrowLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute text-white top-1/2 right-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
+        className="absolute text-white top-1/2 right-2 md:right-4 transform -translate-y-1/2 bg-teal-500 px-3 py-2 rounded-full shadow-xl hover:bg-gray-300"
       >
         <FaArrowRight />
       </button>

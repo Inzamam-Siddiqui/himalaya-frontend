@@ -1,269 +1,56 @@
-import {
-  FaLeaf,
-  FaRecycle,
-  FaCloudSun,
-  FaHandshake,
-  FaUsers,
-} from "react-icons/fa";
-import { AiFillSafetyCertificate } from "react-icons/ai";
-// import planet1 from "../assets/bgimages/planet1.jpg"
 import planet2 from "../assets/bgimages/planet2.jpg";
-// import planet3 from "../assets/bgimages/planet3.jpg"
-import zero2 from "../assets/bgimages/zero2.jpg";
-import eco from "../assets/bgimages/eco.jpg";
-import recycle1 from "../assets/products/recycle2.jpg"
+import SustainabilitySection from "../components/SustainabilitySec";
+import EnvironmentSection from "../components/EnvironmentSection";
+import Approach from "../components/Approach";
 
 const Sustainability = () => {
   return (
     <div className="">
-      
-      <section className="h-auto bg-teal-100 pt-40 pb-20">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl sm:text-4xl font-bold text-teal-900">
-        Sustainability and Environmental Commitment
-      </h2>
-      <p className="mt-4 text-base sm:text-lg max-w-4xl mx-auto text-teal-700">
-        At Himalaya Plast, we embrace sustainability through innovative and responsible manufacturing practices.
-        Our mission is to deliver high-quality, eco-friendly products that meet our clients{"'"} evolving needs
-        while safeguarding the environment.
-      </p>
-    </div>
 
-    <div className="flex flex-col md:flex-row gap-8 items-center">
-      {/* Left - Image */}
-      <div className="w-full md:w-1/2">
-        <img
-          src={recycle1} // Replace with your actual path
-          alt="Sustainability"
-          className="rounded-2xl shadow-lg object-cover w-full h-full"
-        />
-      </div>
+      <SustainabilitySection/>
 
-      {/* Right - Content */}
-      <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg p-6 sm:p-8">
-        <h2 className="text-xl sm:text-2xl font-semibold text-teal-900 mb-4">
-          Recyclability in Closed-Loop Systems
-        </h2>
-        <p className="text-teal-700 text-base sm:text-lg">
-          We use thermoplastic elastomers (TPE) in manufacturing gaskets,
-          offering ideal properties for performance and sustainability.
-        </p>
+      <EnvironmentSection/>
 
-        <div className="mt-6">
-          <h3 className="text-lg sm:text-xl font-medium text-teal-800 mb-3">
-            Key Properties of TPE:
-          </h3>
-          <ul className="list-disc list-inside text-teal-700 space-y-2">
-            <li>
-              <strong>Versatile & Flexible:</strong> Adaptable to a variety of applications.
-            </li>
-            <li>
-              <strong>Recyclable:</strong> Can be reprocessed multiple times.
-            </li>
-            <li>
-              <strong>Safe & High-Performance:</strong> Durable and safe for various uses.
-            </li>
-            <li>
-              <strong>Flame Retardant & Chemical Resistant:</strong> Enhanced protection for various environments.
-            </li>
-            <li>
-              <strong>Aesthetic Flexibility:</strong> Available in transparent and colored forms.
-            </li>
-          </ul>
-        </div>
+      <Approach/>
 
-        {/* <p className="mt-6 text-teal-700 text-base sm:text-lg">
-          These features make TPE a superior alternative to traditional materials like vulcanized rubber,
-          especially in window and door sealing applications. With advanced co-extrusion capabilities,
-          we further enhance design possibilities, providing tailored solutions for specific needs.
-        </p> */}
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-20">
-          {/* Section Block */}
-          {[
-            {
-              title: "Zero Waste and Minimal Carbon Footprint",
-              text: `At Himalaya Plast, we prioritize sustainability at every step of the production process ensuring that no product is wasted and that our carbon footprint is minimized. By reusing waste material, we contribute to a circular economy.`,
-              imgSrc: zero2,
-              reverse: false,
-            },
-            {
-              title: "Environmental Certifications and Accreditations",
-              text: `We believe in continuously improving our practices to align with global sustainability standards.`,
-              imgSrc: eco,
-              reverse: true,
-              list: [
-                "ISO 9001:2015: Quality management that minimizes waste and ensures consistency.",
-                "ISO 14001: Environmental systems to reduce emissions and resource consumption.",
-                "ISO 45001: Safe, compliant, and people-first workplaces.",
-                "ISO 50001: Certified energy efficiency across operations.",
-                "RoHS Compliant: Free from hazardous substances.",
-                "UV Resistant: Engineered for long-term outdoor durability.",
-              ],
-            },
-          ].map(({ title, text, imgSrc, list, reverse }, i) => (
-            <div
-              key={i}
-              className={`flex flex-col ${
-                reverse ? "md:flex-row-reverse" : "md:flex-row"
-              } items-center gap-8`}
-            >
-              <div className="md:w-1/2">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  {title}
-                </h2>
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  {text}
-                </p>
-                {list && (
-                  <ul className="list-disc list-inside text-gray-700 mt-4 space-y-3">
-                    {list.map((item, idx) => (
-                      <li key={idx}>
-                        <strong>{item.split(":")[0]}:</strong>{" "}
-                        {item.split(":").slice(1).join(":").trim()}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-              <div className="md:w-1/2">
-                <img
-                  src={imgSrc}
-                  alt={title}
-                  className="w-full h-auto rounded-2xl shadow-lg object-cover"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-teal-100 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
-          <div className="text-center mb-16 px-2">
-            <h2 className="text-3xl sm:text-4xl font-bold text-teal-900 mb-6">
-              Our Approach to Sustainability
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">
+              Investing in the Planet’s Future
             </h2>
-            <p className="text-base sm:text-lg text-teal-700 leading-relaxed max-w-5xl mx-auto">
-              For years, we have focused on reducing waste, lowering our carbon
-              footprint, and enhancing the efficiency of our operations. By
-              improving raw material selection and fostering a culture of
-              sustainability within our organization, we have made significant
-              strides in reducing environmental impact. Our sustainability
-              efforts are not just about protecting the environment; they also
-              contribute to the long-term success of our business, ensuring that
-              we remain an industry leader in both innovation and
-              responsibility.
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+              Our investment in sustainable practices extends beyond our
+              immediate business needs; it is a long-term commitment to the
+              future of the planet. By continuously improving our processes,
+              adopting innovative technologies, and collaborating with partners
+              who share our values, we aim to protect natural resources and
+              preserve ecosystems for generations to come.
             </p>
           </div>
 
-          {/* Sustainability Commitments Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {[
-              {
-                icon: <FaLeaf className="text-teal-800 text-3xl" />,
-                title: "Energy, Water, and Material Conservation",
-                description:
-                  "We are committed to reducing the consumption of energy, water, and raw materials, ensuring that our production processes are as efficient as possible.",
-              },
-              {
-                icon: <FaRecycle className="text-teal-800 text-3xl" />,
-                title: "Recycling Investment",
-                description:
-                  "We actively encourage and invest in recycling initiatives to ensure that waste is minimized, and materials are repurposed to reduce the need for new resources.",
-              },
-              {
-                icon: <FaCloudSun className="text-teal-800 text-3xl" />,
-                title: "Carbon Footprint Reduction",
-                description:
-                  "We aim to decrease CO2 emissions through the adoption of energy-efficient technologies, improved manufacturing processes, and more sustainable delivery methods.",
-              },
-              {
-                icon: <FaHandshake className="text-teal-800 text-3xl" />,
-                title: "Supplier Engagement",
-                description:
-                  "We collaborate with our suppliers to encourage environmentally responsible practices throughout the supply chain, ensuring that sustainability is a shared responsibility.",
-              },
-              {
-                icon: <FaUsers className="text-teal-800 text-3xl" />,
-                title: "Staff Engagement",
-                description:
-                  "We foster a culture of sustainability within our workforce, empowering our employees to contribute to our environmental goals through awareness programs and eco-friendly practices.",
-              },
-              {
-                icon: (
-                  <AiFillSafetyCertificate className="text-teal-800 text-3xl" />
-                ),
-                title: "Certified by Global Standards",
-                description:
-                  "Guided by globally recognized frameworks like ISO and RoHS, our sustainability practices are structured, independently audited, and aligned with modern industry expectations.",
-              },
-            ].map(({ icon, title, description }, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="bg-teal-200 p-3 sm:p-4 rounded-full shrink-0">
-                  {icon}
-                </div>
-                <div>
-                  <h4 className="text-lg sm:text-xl font-semibold text-teal-800">
-                    {title}
-                  </h4>
-                  <p className="text-teal-700 leading-relaxed text-sm sm:text-base">
-                    {description}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {/* Image + Text Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src={planet2}
+                alt="Sustainable Future"
+                className="rounded-2xl shadow-md w-full object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                Through these efforts, we are not just protecting the
+                environment; we are investing in the future of our business and
+                the well-being of the planet. At Himalaya Plast, we believe that
+                sustainability is not just good for the environment—it’s
+                essential for a thriving, successful future.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      <section className="bg-gray-100 py-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Header Section */}
-    <div className="text-center mb-12">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">
-        Investing in the Planet’s Future
-      </h2>
-      <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-        Our investment in sustainable practices extends beyond our
-        immediate business needs; it is a long-term commitment to the
-        future of the planet. By continuously improving our processes,
-        adopting innovative technologies, and collaborating with partners
-        who share our values, we aim to protect natural resources and
-        preserve ecosystems for generations to come.
-      </p>
-    </div>
-
-    {/* Image + Text Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <img
-          src={planet2}
-          alt="Sustainable Future"
-          className="rounded-2xl shadow-md w-full object-cover"
-        />
-      </div>
-      <div>
-        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-          Through these efforts, we are not just protecting the
-          environment; we are investing in the future of our business and
-          the well-being of the planet. At Himalaya Plast, we believe that
-          sustainability is not just good for the environment—it’s
-          essential for a thriving, successful future.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
     </div>
   );
 };

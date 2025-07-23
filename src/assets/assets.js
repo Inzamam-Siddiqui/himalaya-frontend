@@ -9,8 +9,9 @@ import g from "../assets/products/G.jpg"
 import h from "../assets/products/H.jpg"
 import i from "../assets/products/I_01.jpg"
 
+
 import a1 from "../assets/products/1.1.jpg"
-import a2 from "../assets/products/1.2.png"
+import a2 from "../assets/products/1.2.jpg"
 import aluminium1 from "../assets/products/aluminum1.jpg"
 import aluminium2 from "../assets/products/aluminium2.jpg"
 import pipe1 from "../assets/products/pipe1.jpg"
@@ -27,6 +28,8 @@ import electricpanel1 from "../assets/products/electricpanel1.jpg"
 import electricpanel2 from "../assets/products/electricpanel2.jpg"
 import covergaskets1 from "../assets/products/covergaskets1.jpg"
 import covergaskets2 from "../assets/products/covergaskets2.jpg"
+import customizable1 from "../assets/products/10.1.jpg"
+import customizable2 from "../assets/products/I_02.jpg"
 
 
 export const products = [
@@ -214,7 +217,7 @@ export const products = [
     image:f,
     bannerImage: [pipe1, pipe2],
     description:
-      "Himalaya Plast specializes in the manufacturing of high-performance Pipe Seals & Gaskets designed for use in a wide range of piping systems. These gaskets serve as critical components for providing insulation, preventing leaks, and absorbing vibrations in piping systems. Our TPE-based pipe seals are an ideal solution for ensuring reliable, long-lasting performance, especially in systems exposed to challenging environmental conditions.",
+      "Himalaya Plast specializes in the manufacturing of high-performance Pipe Seals & Gaskets designed for use in a wide range of applications. These gaskets serve as critical components for providing insulation, preventing leaks, and absorbing vibrations in piping systems. Our TPE-based pipe seals are an ideal solution for ensuring reliable, long-lasting performance, especially in systems exposed to challenging environmental conditions.",
     features: [
       "Manufactured using TPE-based materials, offering superior durability and performance compared to traditional PVC and EPDM gaskets.",
       "Designed for both indoor and outdoor use, with excellent resistance to UV, ozone, and extreme temperatures.",
@@ -330,11 +333,13 @@ export const products = [
   {
     id: 10,
     name: "Customizable Gaskets & Seals",
+    image:a,
+    bannerImage: [customizable2,customizable1],
     description:
       "Every project has its unique requirements, and at Himalaya Plast, we pride ourselves on delivering gaskets and seals tailored to our clients’ specific needs. Our Customizable Gaskets offer unmatched flexibility, ensuring that every design challenge is met with precision, durability, and superior performance.",
     features: [
       "Tailored Solutions: Designed to meet specific dimensions, shapes, and applications.",
-      "Material Options: Choose from a range of high-performance materials, including TPE, for enhanced durability.",
+      "Material Options: Choose from a range of high-performance materials, including TPE, TPV, TPO and many more for enhanced durability.",
       "Color Flexibility: Available in custom colors to match branding or design requirements.",
       "Application-Specific Designs: Engineered to suit diverse industries, from construction to automotive and beyond.",
       "Eco-Friendly Manufacturing: Produced using 100% recyclable materials for sustainable solutions.",

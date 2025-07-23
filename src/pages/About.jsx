@@ -2,117 +2,17 @@ import Mission from "../components/Mission";
 import tiger from "../assets/logos/India.png";
 import globe from "../assets/bgimages/global.mp4";
 import { InfiniteMovingCards } from "../components/MovingCards";
-import TextType from "../components/TextType";
-// import map from "../assets/bgimages/map.jpg"
 import { FiTarget } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { MdBuild } from "react-icons/md";
 import { FaHandshake } from "react-icons/fa";
+import AboutPageSection from "../components/AboutPageSection";
 
 const About = () => {
   return (
-    <div className="">
-      <section className="h-auto pt-24 pb-20 bg-teal-100">
-        <div className="h-[12rem] bg-teal-200 mb-12 flex justify-evenly items-center">
-          <TextType
-            text={[
-              "A legacy of  years",
-              "Custom-engineered gaskets",
-              "Made in India",
-            ]}
-            typingSpeed={95}
-            pauseDuration={1500}
-            showCursor={false}
-            cursorCharacter=""
-          />
-          <div>
-            <img
-              src={tiger}
-              alt="Himalaya Plast Logo"
-              className="w-40 h-auto rounded-lg"
-            />
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-5xl text-center font-bold text-teal-800 mb-6">
-            About Himalaya Plast
-          </h2>
-          <p className="text-start text-gray-700 leading-relaxed px-2 sm:px-0">
-            Himalaya Plast is a specialist manufacturer of custom-engineered
-            gaskets designed for uPVC and aluminium profiles. From TPE, TPV, and
-            TPO-based co-extrusion to trial-fitted profile matching, our
-            products are built to lock in cleanly, seal effectively, and perform
-            long-term in architectural applications. We don’t sell from a
-            catalogue — we engineer gaskets to fit your profile exactly.
-          </p>
-        </div>
+    <div>
 
-        <div className="max-w-6xl mx-auto mt-10 space-y-8 px-2 sm:px-0">
-          {/* Item 1 */}
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="font-bold text-teal-800">1</span>
-            </div>
-            <p className="text-gray-700">
-              <strong>Innovation at the Core:</strong> Early adoption of
-              thermoplastic elastomers (TPE) revolutionized our manufacturing
-              processes, enabling 100% recyclability and sustainable practices.
-            </p>
-          </div>
-
-          {/* Item 2 */}
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="font-bold text-teal-800">2</span>
-            </div>
-            <p className="text-gray-700">
-              <strong>Certifications that Inspire Confidence:</strong> We
-              operate under <strong>ISO 9001, 14001, 45001</strong>, and{" "}
-              <strong>50001</strong> standards, with all products RoHS compliant
-              — aligning operations with global benchmarks for quality, safety,
-              sustainability, and compliance.
-            </p>
-          </div>
-
-          {/* Item 3 */}
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="font-bold text-teal-800">3</span>
-            </div>
-            <p className="text-gray-700">
-              <strong>Technological Excellence:</strong> We’ve integrated
-              advanced co-extrusion technology and material sciences to deliver
-              custom-fit solutions for complex architectural needs.
-            </p>
-          </div>
-
-          {/* Item 4 */}
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="font-bold text-teal-800">4</span>
-            </div>
-            <p className="text-gray-700">
-              <strong>A Testament to Growth:</strong> From humble beginnings to
-              a state-of-the-art facility, Himalaya Plast continues to expand
-              its capabilities through continuous improvement and sustainable
-              growth.
-            </p>
-          </div>
-
-          {/* Item 5 */}
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="h-6 w-6 flex-shrink-0 bg-teal-300 rounded-full flex items-center justify-center">
-              <span className="font-bold text-teal-800">5</span>
-            </div>
-            <p className="text-gray-700">
-              <strong>Profile-Matched Perfection:</strong> Each gasket is
-              designed to match specific uPVC and aluminium profiles — ensuring
-              a seamless fit, leak prevention, and long-term structural
-              reliability.
-            </p>
-          </div>
-        </div>
-      </section>
+      <AboutPageSection />
 
       <Mission />
 
@@ -124,10 +24,7 @@ const About = () => {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <source
-            src={globe}
-            type="video/mp4"
-          />
+          <source src={globe} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -159,7 +56,7 @@ const About = () => {
                 name: "Recognized at Leading Industry Events",
                 title: "Delhi (2021) | Mumbai (2022, 2023 & 2025)",
                 quote:
-                  "Proud participants in prestigious global exhibitions such as ZAK World of Façades, showcasing the versatility and quality of our TPE solutions.",
+                  "Proud participants in prestigious global exhibitions such as ZAK Door and Windows Expo, showcasing the versatility and quality of our TPE solutions.",
                 tagline: "Showcasing Excellence, One Event at a Time.",
               },
               {
@@ -229,7 +126,6 @@ const About = () => {
               },
               {
                 name: "Excellence in Customer Satisfaction",
-                title: "98% Satisfaction Rate",
                 quote:
                   "Building long-term relationships through exceptional service and support.",
                 tagline:

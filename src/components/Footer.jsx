@@ -1,6 +1,5 @@
 import hplogo from "../assets/logos/hplogo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { products } from "../assets/assets";
 
 const Footer = () => {
@@ -56,7 +55,7 @@ const Footer = () => {
                 const nameWords = product.name.trim().split(" ");
                 const truncatedName =
                   nameWords.length > 4
-                    ? nameWords.slice(0, 4).join(" ") + "..."
+                    ? nameWords.slice(0, 6).join(" ") + "..."
                     : product.name;
 
                 return (
@@ -101,14 +100,6 @@ const Footer = () => {
                   className="hover:text-blue-600 transition"
                 >
                   <FaFacebook />
-                </a>
-                <a
-                  href="https://x.com/HimalayaPlast?t=tnA_v8Kv3yUpc848955tDg&s=09"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-black transition"
-                >
-                  <FaXTwitter />
                 </a>
                 <a
                   href="https://www.instagram.com/himalaya.plast?igsh=MW5rdjU0ZjcyeXNydg=="

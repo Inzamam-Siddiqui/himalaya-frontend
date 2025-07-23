@@ -158,11 +158,11 @@ const TextType = ({
     Component,
     {
       ref: containerRef,
-      className: `inline-block whitespace-pre-wrap tracking-tight w-80 ${className}`,
+      className: `inline-block whitespace-pre-wrap tracking-tight ${className}`,
       ...props,
     },
-    <span className="text-4xl text-teal-800 font-semibold">
-      {displayedText}
+<span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-teal-800 font-semibold">
+{displayedText}
     </span>,
     showCursor && (
       <span
