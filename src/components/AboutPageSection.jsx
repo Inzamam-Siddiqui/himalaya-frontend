@@ -46,7 +46,7 @@ const AboutSection = () => {
           pauseDuration={1500}
           showCursor={false}
           cursorCharacter=""
-          className="text-center text-base sm:text-lg md:text-xl lg:text-3xl font-semibold text-teal-800 max-w-sm"
+          className="text-center text-base sm:text-lg md:text-xl lg:text-3xl font-semibold text-teal-800 w-[33rem]"
         />
         <motion.img
           src={tiger}
