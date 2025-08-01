@@ -1,5 +1,5 @@
 import image7 from "../assets/bgimages/image7.jpg";
-import { FaHandshake } from "react-icons/fa";
+import { FaHandshake, FaLeaf } from "react-icons/fa";
 
 const AboutSection = () => {
   const shopOpenedYear = 2000;
@@ -77,14 +77,17 @@ const AboutSection = () => {
                   <h4 className="font-bold mb-2 text-teal-700 text-center">
                     🏅 Certifications
                   </h4>
-                  <ul className="text-sm list-disc list-inside space-y-1">
-                    <li>🏅 ISO 9001:2015 </li>
-                    <li>🌱 ISO 14001 </li>
+                  <ul className="text-sm space-y-1">
+                    <li>🏅 ISO 9001:2015</li>
+                    <li>🌱 ISO 14001</li>
                     <li>🛡 ISO 45001</li>
                     <li>⚡ ISO 50001</li>
                     <li>🚫 RoHS Compliant</li>
                     <li>☀ UV Resistant</li>
-                    <li>✅ Lead-Free</li>
+                    <li className="flex items-center space-x-1">
+                      <FaLeaf className="text-green-700 size-3" />
+                      <span>Lead-Free</span>
+                    </li>
                   </ul>
                 </div>
               </div>
