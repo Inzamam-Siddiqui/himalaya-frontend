@@ -1,6 +1,7 @@
-import hplogo from "../assets/logos/hplogo.png";
+// import hplogo from "../assets/logos/hplogo.png";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { products } from "../assets/assets";
+import favi from "../assets/favicon-2.png"
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-sm">
           {/* Logo and Description */}
           <div className="flex flex-col items-start">
-            <img className="mb-5 w-40" src={hplogo} alt="Cygnus Logo" />
+            <img className="mb-5 w-20" src={favi} alt="Cygnus Logo" />
             <p className="leading-6">
               Himalaya Plast is Manufacturer of architectural window gasket
               since 1998.
@@ -124,9 +125,9 @@ const Footer = () => {
 
         {/*----------- Footer Bottom Section (Copyright) -----------*/}
         <div className="py-5 mt-5 border-t border-teal-700">
-          <p className="text-sm text-center">
+          {/* <p className="text-sm text-center">
             Copyright 2024 @ Himalaya Plast - All Rights Reserved.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

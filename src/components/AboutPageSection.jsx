@@ -40,6 +40,7 @@ const AboutSection = () => {
           text={[
             "A legacy of 25+ years",
             "Custom-engineered gaskets",
+            "Benchmark in Gaskets",
             "Made in India",
           ]}
           typingSpeed={95}

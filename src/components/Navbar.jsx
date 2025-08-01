@@ -18,7 +18,6 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Desktop Menu - Hidden on Medium & Small Screens */}
       <ul className="hidden lg:flex gap-10 relative">
         <NavLink
           to="/"
