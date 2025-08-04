@@ -89,13 +89,13 @@ const ContactForm = () => {
             htmlFor="phone"
             className="block text-sm font-medium text-gray-600"
           >
-            Phone Number
+            Mobile Number
           </label>
           <input
             type="tel"
             name="phone"
             id="phone"
-            placeholder="Enter your phone number"
+            placeholder="Enter your mobile number"
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-gray-100 text-gray-700"
             required
           />

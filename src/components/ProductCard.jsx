@@ -5,8 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { products } from "../assets/assets.js";
 
 const ProductCard = () => {
-  const { id } = useParams();
-  const product = products.find((item) => item.id === parseInt(id));
+  const { slug } = useParams();
+  const product = products.find((item) => item.slug === slug);  
   const carouselImages = [...(product?.bannerImage || []), product?.image];
 
   if (!product) {

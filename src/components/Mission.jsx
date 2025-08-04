@@ -22,12 +22,10 @@ const Mission = () => {
     },
     {
       title: "Values",
-      content: `
-        Sustainability: Driving eco-conscious practices across all operations. 
-        Quality: Meeting the highest industry standards in every product. 
-        Innovation: Leveraging advanced technology for smarter, more efficient solutions. 
-        Integrity: Building trust through transparency and ethical practices.
-      `,
+      content: `Sustainability: Driving eco-conscious practices across all operations. 
+Quality: Meeting the highest industry standards in every product. 
+Innovation: Leveraging advanced technology for smarter, more efficient solutions. 
+Integrity: Building trust through transparency and ethical practices.`,
       image: <FaHandHoldingHeart />,
     },
   ];

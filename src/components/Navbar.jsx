@@ -2,6 +2,19 @@ import { NavLink, useNavigate, Link } from "react-router-dom";
 import hplogo from "../assets/logos/hplogo.png";
 import { useState } from "react";
 
+const productList = [
+  { label: "uPVC Door and Window Gaskets", slug: "upvc-door-and-window-gaskets" },
+  { label: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals",     slug: "premium-aluminum-door-window-and-facade-system-gaskets-and-seals",  },
+  { label: "System Window Gaskets", slug: "system-window-gaskets" },
+  { label: "Slim Partition Profiles and Gaskets", slug: "slim-partition-profiles-and-gaskets" },
+  { label: "Partition Profiles and Gaskets", slug: "partition-profiles-and-gaskets" },
+  { label: "Pipe Seals & Gaskets", slug: "pipe-seals-and-gaskets" },
+  { label: "Luggage Seals and Gaskets", slug: "luggage-seals-and-gaskets" },
+  { label: "Electric Panel Gaskets", slug: "electric-panel-gaskets" },
+  { label: "Cover Gaskets & Seals", slug: "cover-gaskets-and-seals" },
+  { label: "Customizable Gaskets & Seals", slug: "customizable-gaskets-and-seals" },
+];
+
 const Navbar = () => {
   const navigate = useNavigate();
   const [showProducts, setShowProducts] = useState(false);
@@ -35,6 +48,8 @@ const Navbar = () => {
         >
           About Us
         </NavLink>
+
+        {/* PRODUCTS Dropdown */}
         <div
           className="relative"
           onMouseEnter={() => setShowProducts(true)}
@@ -50,31 +65,10 @@ const Navbar = () => {
           </NavLink>
           {showProducts && (
             <div className="absolute w-[22rem] left-0 bg-white border border-gray-300 shadow-xl rounded-2xl py-2 z-10">
-              {[
-                { label: "uPVC Door and Window Gaskets", path: "/products/1" },
-                {
-                  label:
-                    "Premium Aluminum Door, Window, and Facade System Gaskets & Seals",
-                  path: "/products/2",
-                },
-                { label: "System Window Gaskets", path: "/products/8" },
-                {
-                  label: "Slim Partition Profiles and Gaskets",
-                  path: "/products/6",
-                },
-                {
-                  label: "Partition Profiles and Gaskets",
-                  path: "/products/7",
-                },
-                { label: "Pipe Seals & Gaskets", path: "/products/3" },
-                { label: "Luggage Seals and Gaskets", path: "/products/5" },
-                { label: "Electric Panel Gaskets", path: "/products/9" },
-                { label: "Cover Gaskets & Seals", path: "/products/4" },
-                { label: "Customizable Gaskets & Seals", path: "/products/10" },
-              ].map((item, index) => (
+              {productList.map((item, index) => (
                 <button
                   key={index}
-                  onClick={() => navigate(item.path)}
+                  onClick={() => navigate(`/products/${item.slug}`)}
                   className="flex items-center w-full mb-2 px-4 py-2 text-left hover:bg-teal-500 hover:text-white text-gray-800"
                 >
                   {item.label}
@@ -83,6 +77,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
+
         <NavLink
           to="/sustainability"
           className={({ isActive }) =>
@@ -101,7 +96,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Mobile Menu Button - Visible Only on Small & Medium Screens */}
+      {/* Mobile Menu */}
       <button
         className="lg:hidden text-gray-800"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -117,7 +112,11 @@ const Navbar = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h26M4 12h26M4 18h26"}
+            d={
+              isMenuOpen
+                ? "M6 18L18 6M6 6l12 12"
+                : "M4 6h26M4 12h26M4 18h26"
+            }
           />
         </svg>
       </button>
@@ -125,39 +124,19 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="absolute top-20 left-0 w-full bg-white shadow-lg z-10 lg:hidden">
           <ul className="flex flex-col items-start p-4 space-y-4">
-            <NavLink
-              to="/"
-              className="text-gray-800"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <NavLink to="/" className="text-gray-800" onClick={() => setIsMenuOpen(false)}>
               HOME
             </NavLink>
-            <NavLink
-              to="/about"
-              className="text-gray-800"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <NavLink to="/about" className="text-gray-800" onClick={() => setIsMenuOpen(false)}>
               ABOUT US
             </NavLink>
-            <NavLink
-              to="/products"
-              className="text-gray-800"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <NavLink to="/products" className="text-gray-800" onClick={() => setIsMenuOpen(false)}>
               PRODUCTS
             </NavLink>
-            <NavLink
-              to="/sustainability"
-              className="text-gray-800"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <NavLink to="/sustainability" className="text-gray-800" onClick={() => setIsMenuOpen(false)}>
               SUSTAINABILITY
             </NavLink>
-            <NavLink
-              to="/contact"
-              className="text-gray-800"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <NavLink to="/contact" className="text-gray-800" onClick={() => setIsMenuOpen(false)}>
               CONTACT US
             </NavLink>
           </ul>

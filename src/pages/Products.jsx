@@ -3,9 +3,7 @@ import { products } from "../assets/assets.js";
 import j from "../assets/products/I_02.jpg";
 import { ProductBanner } from "../components/ProductBanner.jsx";
 import GasketProcessTimeline from "../components/Timeline.jsx";
-
 import { motion } from "framer-motion";
-
 import a from "../assets/productsBanner/A.png";
 import b from "../assets/productsBanner/B.png";
 import c from "../assets/productsBanner/C.png";
@@ -78,7 +76,7 @@ const Products = () => {
                 className="bg-teal-200 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-2"
               >
                 <Link
-                  to={`/products/${product.id}`}
+                  to={`/products/${product.slug}`}
                   className="block text-center"
                 >
                   <img
@@ -106,10 +104,11 @@ const Products = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div
-            className="relative bg-teal-200 shadow-teal-900 shadow-2xl transition transform group-hover:-translate-y-2"
-          >
-            <Link to={`/products/${products[9].id}`} className="block text-center">
+          <div className="relative bg-teal-200 shadow-teal-900 shadow-2xl transition transform group-hover:-translate-y-2">
+            <Link
+              to={`/products/${products[9].slug}`}
+              className="block text-center"
+            >
               <img
                 src={j}
                 alt={products[9].name}

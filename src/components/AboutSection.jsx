@@ -45,7 +45,7 @@ const AboutSection = () => {
               className="object-cover"
             /> */}
             <h2 className="pt-10">
-              Gulam Kibria Siddiqui <br />- Founder & CEO
+              Gulam Kibria Siddiqui <br />- Founder & MD
             </h2>
           </div>
         </div>

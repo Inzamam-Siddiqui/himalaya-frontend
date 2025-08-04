@@ -1,4 +1,3 @@
-
 import a from "../assets/products/A.jpg"
 import b from "../assets/products/B.jpg"
 import c from "../assets/products/C.jpg"
@@ -35,6 +34,7 @@ import customizable2 from "../assets/products/I_02.jpg"
 export const products = [
   {
     id: 1,
+    slug: "upvc-door-and-window-gaskets",
     image:a,
     bannerImage: [a1, a2],
     name: "uPVC Door and Window Gaskets",
@@ -98,6 +98,7 @@ export const products = [
   },
   {
     id: 2,
+    slug: "premium-aluminum-door-window-and-facade-system-gaskets-and-seals",
     name: "Premium Aluminum Door, Window, and Facade System Gaskets & Seals",
     image:b,
     bannerImage: [aluminium1, aluminium2],
@@ -127,6 +128,7 @@ export const products = [
   },
   {
     id: 3,
+    slug: "system-window-gaskets",
     name: "System Window Gaskets",
     image: h,
     bannerImage: [system1, system2],
@@ -157,6 +159,7 @@ export const products = [
   },
   {
     id: 4,
+    slug: "slim-partition-profiles-and-gaskets",
     name: "Slim Partition Profiles and Gaskets",
     image:d,
     bannerImage: [slim1, slim2],
@@ -183,6 +186,7 @@ export const products = [
   },
   {
     id: 5,
+    slug: "partition-profiles-and-gaskets",
     name: "Partition Profiles and Gaskets",
     image: c,
     bannerImage: [partition1, partition2],
@@ -213,6 +217,7 @@ export const products = [
   },
   {
     id: 6,
+    slug: "pipe-seals-and-gaskets",
     name: "Pipe Seals & Gaskets",
     image:f,
     bannerImage: [pipe1, pipe2],
@@ -241,6 +246,7 @@ export const products = [
   },
   {
     id: 7,
+    slug: "luggage-seals-and-gaskets",
     name: "Luggage Seals & Gaskets",
     image:g,
     bannerImage: [luggage1, luggage2],
@@ -267,6 +273,7 @@ export const products = [
   },
   {
     id: 8,
+    slug: "electric-panel-gaskets",
     name: "Electric Panel Gaskets",
     image:i,
     bannerImage: [electricpanel1, electricpanel2],
@@ -297,6 +304,7 @@ export const products = [
   },
   {
     id: 9,
+    slug: "cover-gaskets-and-seals",
     name: "Cover Gaskets & Seals",
     image:e,
     bannerImage: [covergaskets1, covergaskets2],
@@ -332,6 +340,7 @@ export const products = [
   },
   {
     id: 10,
+    slug: "customizable-gaskets-and-seals",
     name: "Customizable Gaskets & Seals",
     image:a,
     bannerImage: [customizable2,customizable1],
