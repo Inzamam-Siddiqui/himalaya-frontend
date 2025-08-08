@@ -62,7 +62,7 @@ const Footer = () => {
                 return (
                   <li key={product.id}>
                     <a
-                      href={`/products/${product.id}`}
+                      href={`/products/${product.slug}`}
                       className="hover:text-teal-300 transition"
                     >
                       {truncatedName}
